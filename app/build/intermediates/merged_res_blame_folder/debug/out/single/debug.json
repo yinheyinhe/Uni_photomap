@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "D:\\Uni_photomap-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_icon.png.flat",
+        "source": "D:\\Uni_photomap-master\\app\\src\\main\\res\\drawable-xxhdpi\\icon.png"
+    },
+    {
+        "merged": "D:\\Uni_photomap-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
+        "source": "D:\\Uni_photomap-master\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "D:\\Uni_photomap-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_splash.png.flat",
+        "source": "D:\\Uni_photomap-master\\app\\src\\main\\res\\drawable-xxhdpi\\splash.png"
+    },
+    {
+        "merged": "D:\\Uni_photomap-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_push.png.flat",
+        "source": "D:\\Uni_photomap-master\\app\\src\\main\\res\\drawable-xxhdpi\\push.png"
+    }
+]

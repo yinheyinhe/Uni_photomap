@@ -1,0 +1,13 @@
+{
+  "nativePlugins": [
+    {
+      "plugins": [
+        {
+          "type": "videomodule",
+          "name": "arcgis",
+          "class": "io.dcloud.uniplugin.arcgis"
+        }
+      ]
+    }
+  ]
+}
