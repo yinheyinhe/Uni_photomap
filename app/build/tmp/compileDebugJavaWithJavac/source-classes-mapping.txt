@@ -1,5 +1,5 @@
+com/HBuilder/UniPlugin/BuildConfig.java
+ com.HBuilder.UniPlugin.BuildConfig
 com/HBuilder/UniPlugin/MainActivity.java
  com.HBuilder.UniPlugin.MainActivity
  com.HBuilder.UniPlugin.MainActivity$1
-com/HBuilder/UniPlugin/BuildConfig.java
- com.HBuilder.UniPlugin.BuildConfig

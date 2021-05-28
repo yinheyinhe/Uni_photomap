@@ -39,6 +39,7 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         textView = findViewById(R.id.text);
+        requestAuthorities();
         textView.setText("hello");
         mapView = (MapView) findViewById(R.id.mapView);
         textView = findViewById(R.id.text);
@@ -62,28 +63,24 @@ public class MainActivity extends Activity {
         locationDisplay = mapView.getLocationDisplay();
         locationDisplay.setShowLocation(true);
         locationDisplay.setAutoPanMode(LocationDisplay.AutoPanMode.RECENTER);
-        locationDisplay.startAsync();
+        //locationDisplay.startAsync();
 //        LocationDataSource.Location location = new LocationDataSource.Location(new Point(39.577,116.201313,SpatialReference.create(4326)));
 //        cusLocationDataSource.UpdateLocation(location);
 
         //locationDisplay.setLocationDataSource(cusLocationDataSource);
-//        locationDisplay.addLocationChangedListener(locationChangedEvent -> {
-//
-//            Double Latitude =  locationChangedEvent.getLocation().getPosition().getY()-0.375043;
-//            Double Longitude = locationChangedEvent.getLocation().getPosition().getX()-0.135801;
-////            LocationDataSource.Location location = new LocationDataSource.Location(new Point(Longitude,Latitude,SpatialReference.create(4326)));
-////            cusLocationDataSource.UpdateLocation(location);
-//
-//           textView.setText(Latitude+","+Longitude);
-//        });
-//
-//
-//        if(!locationDisplay.isStarted())
-//
-//
-//            locationDisplay.startAsync();
-//
-//
+        locationDisplay.addLocationChangedListener(locationChangedEvent -> {
+
+            Double Latitude =  locationChangedEvent.getLocation().getPosition().getY();
+            Double Longitude = locationChangedEvent.getLocation().getPosition().getX();
+
+
+           textView.setText(Latitude+","+Longitude);
+        });
+
+
+        if(!locationDisplay.isStarted())
+            locationDisplay.startAsync();
+
     }
 
     private String[] getManifextPermissions() {
