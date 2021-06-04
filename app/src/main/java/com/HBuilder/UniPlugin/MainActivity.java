@@ -1,26 +1,19 @@
 package com.HBuilder.UniPlugin;
 import android.Manifest;
 import android.app.Activity;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Build;
 import android.os.Bundle;
-import android.widget.TextView;
+import android.view.View;
+import android.widget.Button;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
-import com.esri.arcgisruntime.ArcGISRuntimeEnvironment;
-import com.esri.arcgisruntime.geometry.Point;
-import com.esri.arcgisruntime.geometry.SpatialReference;
-import com.esri.arcgisruntime.layers.ArcGISTiledLayer;
-import com.esri.arcgisruntime.location.LocationDataSource;
-import com.esri.arcgisruntime.mapping.ArcGISMap;
-import com.esri.arcgisruntime.mapping.Basemap;
-import com.esri.arcgisruntime.mapping.view.LocationDisplay;
-import com.esri.arcgisruntime.mapping.view.MapView;
+import com.laocaixw.layout.SuspendButtonLayout;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -30,59 +23,16 @@ import java.util.List;
 public class MainActivity extends Activity {
 
     private static final int REQUEST_CODE = 1;
-    private TextView textView;
-    private MapView mapView;
-    private LocationDisplay locationDisplay;
+    private String[] suspendChildButtonInfo = {"相机", "音乐", "地图", "亮度", "联系人", "短信"};
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        textView = findViewById(R.id.text);
         requestAuthorities();
-        textView.setText("hello");
-        mapView = (MapView) findViewById(R.id.mapView);
-        textView = findViewById(R.id.text);
-//创建一个地图对象
-//        ArcGISRuntimeEnvironment.setApiKey("AAPK6b685d3dbd564411a14f7fc06273d81beaL7" +
-//                "_xTeuZFPaviQLhHt2MEPoa9iFC3hrOppU2GSGwUsZTrEFLf7epfcVtqAUx6W");
-        ArcGISMap map = new ArcGISMap();
-//去除水印
-        //ArcGISRuntime.setClientId("1eFHW78avlnRUPHm");
-//创建并添加地图服务
-        String strMapUrl="http://map.geoq.cn/arcgis/rest/services/ChinaOnlineCommunity/MapServer";
-        ArcGISTiledLayer arcGISTiledLayer = new ArcGISTiledLayer(strMapUrl);
-//创建底图、并设置底图图层
-        Basemap basemap = new Basemap(arcGISTiledLayer);
-        //basemap.getBaseLayers().add(arcGISTiledLayer);
-//设置地图底图
-        map.setBasemap(basemap);
-//设置map地图对象在MapView控件中显示
-        mapView.setMap(map);
-//        cusLocationDataSource = new CusLocationDataSource();
-        locationDisplay = mapView.getLocationDisplay();
-        locationDisplay.setShowLocation(true);
-        locationDisplay.setAutoPanMode(LocationDisplay.AutoPanMode.RECENTER);
-        //locationDisplay.startAsync();
-//        LocationDataSource.Location location = new LocationDataSource.Location(new Point(39.577,116.201313,SpatialReference.create(4326)));
-//        cusLocationDataSource.UpdateLocation(location);
-
-        //locationDisplay.setLocationDataSource(cusLocationDataSource);
-        locationDisplay.addLocationChangedListener(locationChangedEvent -> {
-
-            Double Latitude =  locationChangedEvent.getLocation().getPosition().getY();
-            Double Longitude = locationChangedEvent.getLocation().getPosition().getX();
-
-
-           textView.setText(Latitude+","+Longitude);
-        });
-
-
-        if(!locationDisplay.isStarted())
-            locationDisplay.startAsync();
-
+        init();
     }
-
     private String[] getManifextPermissions() {
         // all permissions in AndroidManifext.xml
         // for android don't let me get them dynamically, it is ugly to code like this
@@ -152,25 +102,33 @@ public class MainActivity extends Activity {
         Toast.makeText(this, "At least one permission is denied", Toast.LENGTH_LONG).show();
         finish();
     }
+    private void init(){
+        final SuspendButtonLayout suspendButtonLayout = (SuspendButtonLayout) findViewById(R.id.layout);
+        suspendButtonLayout.setOnSuspendListener(new SuspendButtonLayout.OnSuspendListener() {
+            @Override
+            public void onButtonStatusChanged(int status) {
 
-    @Override
-    protected void onPause() {
-        super.onPause();
-        mapView.pause();
+            }
+
+            @Override
+            public void onChildButtonClick(int index) {
+                switch(index-1){
+                    case 0:
+                        initlistener();
+                        break;
+                    case 1:
+                        break;
+                }
+                Toast.makeText(MainActivity.this, "您点击了【"
+                        + suspendChildButtonInfo[index - 1] + "】按钮！", Toast.LENGTH_SHORT).show();
+            }
+        });
+
     }
-
-    @Override
-    protected void onResume() {
-        super.onResume();
-        mapView.resume();
+    private void initlistener(){
+        Intent intent = new Intent(getApplicationContext(),TestActivity.class);
+        startActivity(intent);
     }
-
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-        mapView.dispose();
-    }
-
 
 
 

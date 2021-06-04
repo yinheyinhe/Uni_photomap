@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.HBuilder.UniPlugin">
 
     <supports-screens
@@ -14,6 +15,15 @@
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /><!--粗略定位权限-->
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /><!--精确定位权限-->
 
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
+    <uses-feature android:name="android.permission.hardware.camera"/>
+    <uses-feature android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+
     <!--OpenGL ES支持 -->
     <uses-feature
         android:glEsVersion="0x00020000"
@@ -26,7 +36,8 @@
         android:icon="@drawable/icon"
         android:label="@string/app_name"
         android:largeHeap="true"
-        android:supportsRtl="true">
+        android:supportsRtl="true"
+        tools:replace="android:icon">
         <activity
             android:name="io.dcloud.PandoraEntry"
             android:configChanges="orientation|keyboardHidden|screenSize|mcc|mnc|fontScale"
@@ -92,6 +103,8 @@
         <meta-data
             android:name="dcloud_appkey"
             android:value="fb2679294fa48a1dad40ff10fa369ed8" />
+        <activity android:name=".TestActivity"></activity>
+        <activity android:name=".SelfCameraActivity"></activity>
     </application>
 
 </manifest>

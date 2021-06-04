@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/camera_layout"
+        android:layout_weight="1">
+
+        <com.HBuilder.UniPlugin.CameraPreView
+            android:id="@+id/cf_frame_camera_sv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="40dp"
+            android:id="@+id/location"
+            android:gravity="center"
+            android:textColor="#DC143C"
+            android:text="hhh"
+            android:textSize="20sp"/>
+
+
+
+        <ImageView
+            android:id="@+id/private_cf_frame_iv"
+            android:layout_width="359dp"
+            android:layout_height="381dp"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/paishe1" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cf_tips_tv"
+            android:layout_alignBottom="@+id/private_cf_frame_iv"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:textColor="#DC143C"
+            android:textSize="20sp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="30dp">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:id="@+id/cf_shoot_again_btn"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/again1"
+                android:visibility="invisible"/>
+
+            <ImageView
+                android:id="@+id/camera_cancle_button"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="60dp"
+                android:background="@drawable/fanhui1" />
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerVertical="true"
+                android:id="@+id/cf_shot_btn"
+                android:layout_centerInParent="true"
+                android:background="@drawable/take_photo1"/>
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:id="@+id/cf_confirm_btn"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/duigou"
+                android:visibility="invisible"/>
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+</LinearLayout>

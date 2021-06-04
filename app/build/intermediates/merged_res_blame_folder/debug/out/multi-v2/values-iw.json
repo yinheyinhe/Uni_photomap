@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\Uni_photomap-master\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-iw\\values-iw.xml",
+            "outputFile": "D:\\Uni_photomap\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-iw\\values-iw.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\f9db3af1d4b21c0f8eaed47c1558f861\\appcompat-1.2.0\\res\\values-iw\\values-iw.xml",

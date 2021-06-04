@@ -1,18 +1,74 @@
 [
     {
-        "merged": "D:\\Uni_photomap-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_icon.png.flat",
-        "source": "D:\\Uni_photomap-master\\app\\src\\main\\res\\drawable-xxhdpi\\icon.png"
+        "merged": "D:\\Uni_photomap\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_test.xml.flat",
+        "source": "D:\\Uni_photomap\\app\\src\\main\\res\\layout\\activity_test.xml"
     },
     {
-        "merged": "D:\\Uni_photomap-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
-        "source": "D:\\Uni_photomap-master\\app\\src\\main\\res\\layout\\activity_main.xml"
+        "merged": "D:\\Uni_photomap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_splash.png.flat",
+        "source": "D:\\Uni_photomap\\app\\src\\main\\res\\drawable\\splash.png"
     },
     {
-        "merged": "D:\\Uni_photomap-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_splash.png.flat",
-        "source": "D:\\Uni_photomap-master\\app\\src\\main\\res\\drawable-xxhdpi\\splash.png"
+        "merged": "D:\\Uni_photomap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_push.png.flat",
+        "source": "D:\\Uni_photomap\\app\\src\\main\\res\\drawable\\push.png"
     },
     {
-        "merged": "D:\\Uni_photomap-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_push.png.flat",
-        "source": "D:\\Uni_photomap-master\\app\\src\\main\\res\\drawable-xxhdpi\\push.png"
+        "merged": "D:\\Uni_photomap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_again.jpg.flat",
+        "source": "D:\\Uni_photomap\\app\\src\\main\\res\\drawable\\again.jpg"
+    },
+    {
+        "merged": "D:\\Uni_photomap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_fanhui1.png.flat",
+        "source": "D:\\Uni_photomap\\app\\src\\main\\res\\drawable\\fanhui1.png"
+    },
+    {
+        "merged": "D:\\Uni_photomap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_fanhui.jpg.flat",
+        "source": "D:\\Uni_photomap\\app\\src\\main\\res\\drawable\\fanhui.jpg"
+    },
+    {
+        "merged": "D:\\Uni_photomap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_paishe1.png.flat",
+        "source": "D:\\Uni_photomap\\app\\src\\main\\res\\drawable\\paishe1.png"
+    },
+    {
+        "merged": "D:\\Uni_photomap\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_self_camera.xml.flat",
+        "source": "D:\\Uni_photomap\\app\\src\\main\\res\\layout\\activity_self_camera.xml"
+    },
+    {
+        "merged": "D:\\Uni_photomap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_fanzhuan.jpg.flat",
+        "source": "D:\\Uni_photomap\\app\\src\\main\\res\\drawable\\fanzhuan.jpg"
+    },
+    {
+        "merged": "D:\\Uni_photomap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_duigou.jpg.flat",
+        "source": "D:\\Uni_photomap\\app\\src\\main\\res\\drawable\\duigou.jpg"
+    },
+    {
+        "merged": "D:\\Uni_photomap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher_background.xml.flat",
+        "source": "D:\\Uni_photomap\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "D:\\Uni_photomap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_take_photo1.png.flat",
+        "source": "D:\\Uni_photomap\\app\\src\\main\\res\\drawable\\take_photo1.png"
+    },
+    {
+        "merged": "D:\\Uni_photomap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_icon.png.flat",
+        "source": "D:\\Uni_photomap\\app\\src\\main\\res\\drawable\\icon.png"
+    },
+    {
+        "merged": "D:\\Uni_photomap\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
+        "source": "D:\\Uni_photomap\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "D:\\Uni_photomap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_take_photo.jpg.flat",
+        "source": "D:\\Uni_photomap\\app\\src\\main\\res\\drawable\\take_photo.jpg"
+    },
+    {
+        "merged": "D:\\Uni_photomap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_again1.png.flat",
+        "source": "D:\\Uni_photomap\\app\\src\\main\\res\\drawable\\again1.png"
+    },
+    {
+        "merged": "D:\\Uni_photomap\\app\\build\\intermediates\\res\\merged\\debug\\layout_map.xml.flat",
+        "source": "D:\\Uni_photomap\\app\\src\\main\\res\\layout\\map.xml"
+    },
+    {
+        "merged": "D:\\Uni_photomap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_paishe.jpg.flat",
+        "source": "D:\\Uni_photomap\\app\\src\\main\\res\\drawable\\paishe.jpg"
     }
 ]

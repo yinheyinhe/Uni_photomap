@@ -1,4 +1,4 @@
-# The proguard configuration file for the following section is D:\Uni_photomap-master\app\build\intermediates\proguard-files\proguard-android.txt-4.2.1
+# The proguard configuration file for the following section is D:\Uni_photomap\app\build\intermediates\proguard-files\proguard-android.txt-4.2.1
 # This is a configuration file for ProGuard.
 # http://proguard.sourceforge.net/index.html#manual/usage.html
 #
@@ -110,8 +110,8 @@
 # These classes are duplicated between android.jar and core-lambda-stubs.jar.
 -dontnote java.lang.invoke.**
 
-# End of content from D:\Uni_photomap-master\app\build\intermediates\proguard-files\proguard-android.txt-4.2.1
-# The proguard configuration file for the following section is D:\Uni_photomap-master\app\proguard-rules.pro
+# End of content from D:\Uni_photomap\app\build\intermediates\proguard-files\proguard-android.txt-4.2.1
+# The proguard configuration file for the following section is D:\Uni_photomap\app\proguard-rules.pro
 -optimizationpasses 5
 -dontusemixedcaseclassnames
 -dontskipnonpubliclibraryclasses
@@ -258,10 +258,12 @@
 -keep class pl.** {*;}
 -keep class io.** {*;}
 -keep class org.mozilla.**{*;}
-# End of content from D:\Uni_photomap-master\app\proguard-rules.pro
-# The proguard configuration file for the following section is D:\Uni_photomap-master\app\build\intermediates\aapt_proguard_file\debug\aapt_rules.txt
+# End of content from D:\Uni_photomap\app\proguard-rules.pro
+# The proguard configuration file for the following section is D:\Uni_photomap\app\build\intermediates\aapt_proguard_file\debug\aapt_rules.txt
 -keep class androidx.core.app.CoreComponentFactory { <init>(); }
 -keep class com.HBuilder.UniPlugin.MainActivity { <init>(); }
+-keep class com.HBuilder.UniPlugin.SelfCameraActivity { <init>(); }
+-keep class com.HBuilder.UniPlugin.TestActivity { <init>(); }
 -keep class com.dmcbig.mediapicker.PickerActivity { <init>(); }
 -keep class com.dmcbig.mediapicker.PreviewActivity { <init>(); }
 -keep class com.taobao.weex.WXGlobalEventReceiver { <init>(); }
@@ -318,6 +320,8 @@
 
 -keep class androidx.browser.browseractions.BrowserActionsFallbackMenuView { <init>(android.content.Context, android.util.AttributeSet); }
 
+-keep class androidx.cardview.widget.CardView { <init>(android.content.Context, android.util.AttributeSet); }
+
 -keep class androidx.constraintlayout.widget.ConstraintLayout { <init>(android.content.Context, android.util.AttributeSet); }
 
 -keep class androidx.coordinatorlayout.widget.CoordinatorLayout { <init>(android.content.Context, android.util.AttributeSet); }
@@ -327,6 +331,8 @@
 -keep class androidx.recyclerview.widget.RecyclerView { <init>(android.content.Context, android.util.AttributeSet); }
 
 -keep class androidx.viewpager.widget.ViewPager { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.HBuilder.UniPlugin.CameraPreView { <init>(android.content.Context, android.util.AttributeSet); }
 
 -keep class com.dcloud.android.widget.TextViewButton { <init>(android.content.Context, android.util.AttributeSet); }
 
@@ -364,6 +370,8 @@
 
 -keep class com.google.android.material.textview.MaterialTextView { <init>(android.content.Context, android.util.AttributeSet); }
 
+-keep class com.laocaixw.layout.SuspendButtonLayout { <init>(android.content.Context, android.util.AttributeSet); }
+
 -keep class com.taobao.weex.ui.view.listview.WXRecyclerView { <init>(android.content.Context, android.util.AttributeSet); }
 
 -keep class io.dcloud.common.ui.GifImageView { <init>(android.content.Context, android.util.AttributeSet); }
@@ -379,7 +387,7 @@
 -keepclassmembers class * { *** onClick(android.view.View); }
 
 
-# End of content from D:\Uni_photomap-master\app\build\intermediates\aapt_proguard_file\debug\aapt_rules.txt
+# End of content from D:\Uni_photomap\app\build\intermediates\aapt_proguard_file\debug\aapt_rules.txt
 # The proguard configuration file for the following section is C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\46216631eceebaf6275d0cd99e68660b\jetified-android-gif-drawable-release@1.2.17\proguard.txt
 -keep public class pl.droidsonroids.gif.GifIOException{<init>(int, java.lang.String);}
 

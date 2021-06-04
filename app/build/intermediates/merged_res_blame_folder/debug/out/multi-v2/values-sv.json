@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\Uni_photomap-master\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sv\\values-sv.xml",
+            "outputFile": "D:\\Uni_photomap\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sv\\values-sv.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\2e63e34636bb8faf75a7e5fa8906a6d6\\arcgis-android-100.8.0\\res\\values-sv\\values-sv.xml",

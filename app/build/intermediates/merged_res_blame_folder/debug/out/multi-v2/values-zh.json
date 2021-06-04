@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\Uni_photomap-master\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-zh\\values-zh.xml",
+            "outputFile": "D:\\Uni_photomap\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-zh\\values-zh.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\ae2db6abaabc70415b3b4457cc03ea42\\jetified-lib.5plus.base-release\\res\\values-zh\\values-zh.xml",

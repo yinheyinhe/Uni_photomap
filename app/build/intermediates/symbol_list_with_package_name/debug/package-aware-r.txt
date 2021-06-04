@@ -330,6 +330,7 @@ attr dialogCornerRadius
 attr dialogPreferredPadding
 attr dialogTheme
 attr displayOptions
+attr distance
 attr divider
 attr dividerHorizontal
 attr dividerPadding
@@ -467,7 +468,16 @@ attr iconStartPadding
 attr iconTint
 attr iconTintMode
 attr iconifiedByDefault
+attr image1
+attr image2
+attr image3
+attr image4
+attr image5
+attr image6
 attr imageButtonStyle
+attr imageMainClose
+attr imageMainOpen
+attr imageSize
 attr image_color
 attr image_gallery_select_shade
 attr image_gallery_span_count
@@ -596,6 +606,7 @@ attr listPreferredItemPaddingStart
 attr logo
 attr logoDescription
 attr loopCount
+attr marginY
 attr materialAlertDialogBodyTextStyle
 attr materialAlertDialogTheme
 attr materialAlertDialogTitleIconStyle
@@ -1030,6 +1041,9 @@ color cardview_light_background
 color cardview_shadow_end_color
 color cardview_shadow_start_color
 color checkbox_themeable_attribute_color
+color colorAccent
+color colorPrimary
+color colorPrimaryDark
 color dadada
 color dcloud_gallery_default_text_color
 color dcloud_slt_about_text_color
@@ -1284,6 +1298,8 @@ dimen abc_text_size_subtitle_material_toolbar
 dimen abc_text_size_title_material
 dimen abc_text_size_title_material_toolbar
 dimen action_bar_size
+dimen activity_horizontal_margin
+dimen activity_vertical_margin
 dimen appcompat_dialog_background_inset
 dimen browser_actions_context_menu_max_width
 dimen browser_actions_context_menu_min_padding
@@ -1650,6 +1666,8 @@ drawable abc_vector_test
 drawable ad_dcloud_main_ad_tag
 drawable ad_dcloud_main_skip_bg
 drawable ad_dcloud_main_skip_shape
+drawable again
+drawable again1
 drawable arcgisruntime_location_display_acquiring_symbol
 drawable arcgisruntime_location_display_compass_symbol
 drawable arcgisruntime_location_display_course_symbol
@@ -1757,6 +1775,11 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable duigou
+drawable fanhui
+drawable fanhui1
+drawable fanzhuan
+drawable ic_launcher_background
 drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
@@ -1800,6 +1823,8 @@ drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable offline_pin
 drawable offline_pin_round
+drawable paishe
+drawable paishe1
 drawable push
 drawable shortcut_permission_guide_bg
 drawable shortcut_permission_guide_close
@@ -1817,6 +1842,8 @@ drawable side_bar_refresh
 drawable side_bar_share
 drawable sidebar_shortcut
 drawable splash
+drawable take_photo
+drawable take_photo1
 drawable test_custom_background
 drawable toast_bg
 drawable tooltip_frame_dark
@@ -1941,7 +1968,10 @@ id btn_back
 id btn_clip
 id btn_text
 id btn_undo
+id button
 id buttonPanel
+id camera_cancle_button
+id camera_layout
 id cancel
 id cancel_action
 id cancel_button
@@ -1953,6 +1983,11 @@ id centerCrop
 id centerInside
 id center_horizontal
 id center_vertical
+id cf_confirm_btn
+id cf_frame_camera_sv
+id cf_shoot_again_btn
+id cf_shot_btn
+id cf_tips_tv
 id cg_colors
 id chain
 id chains
@@ -2122,6 +2157,7 @@ id linear
 id listMode
 id list_item
 id ll_title_bar
+id location
 id logs
 id mapView
 id mapview_esribanner_attribution_text
@@ -2197,6 +2233,7 @@ id play_view
 id position
 id postLayout
 id preview
+id private_cf_frame_iv
 id progressBar
 id progress_circular
 id progress_horizontal
@@ -2248,6 +2285,7 @@ id shortcut
 id showCustom
 id showHome
 id showTitle
+id show_image
 id sideBarButtonsLayout
 id sideBarCloseLayout
 id sideBarFavoriteLayout
@@ -2304,6 +2342,7 @@ id tag_screen_reader_focusable
 id tag_transition_group
 id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
+id take_photo
 id test_checkbox_android_button_tint
 id test_checkbox_app_button_tint
 id test_radiobutton_android_button_tint
@@ -2427,6 +2466,8 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_main
+layout activity_self_camera
+layout activity_test
 layout ad_dcloud_main
 layout ad_dcloud_splash
 layout arcgisruntime_cert_dialog
@@ -2490,6 +2531,7 @@ layout image_layout_gallery_menu_item
 layout image_layout_gallery_pop
 layout image_layout_image
 layout image_text_dialog
+layout map
 layout mtrl_alert_dialog
 layout mtrl_alert_dialog_actions
 layout mtrl_alert_dialog_title
@@ -2564,10 +2606,19 @@ mipmap dcloud_gallery_edit_ok
 mipmap dcloud_gallery_edit_revert
 mipmap dcloud_gallery_edit_rotate
 mipmap dcloud_gallery_edit_text
+mipmap ic_launcher
 mipmap image_ic_adjust
 mipmap image_ic_delete
 mipmap image_ic_undo
 mipmap image_ic_undo_disable
+mipmap suspend_1
+mipmap suspend_2
+mipmap suspend_3
+mipmap suspend_4
+mipmap suspend_5
+mipmap suspend_6
+mipmap suspend_main_close
+mipmap suspend_main_open
 plurals mtrl_badge_content_description
 string abc_action_bar_home_description
 string abc_action_bar_up_description
@@ -2973,6 +3024,7 @@ style Animation_AppCompat_DropDownUp
 style Animation_AppCompat_Tooltip
 style Animation_Design_BottomSheetDialog
 style Animation_MaterialComponents_BottomSheetDialog
+style AppTheme
 style Base_AlertDialog_AppCompat
 style Base_AlertDialog_AppCompat_Light
 style Base_Animation_AppCompat_Dialog
@@ -3796,6 +3848,7 @@ styleable State android_id constraints
 styleable StateListDrawable android_dither android_visible android_variablePadding android_constantSize android_enterFadeDuration android_exitFadeDuration
 styleable StateListDrawableItem android_drawable
 styleable StateSet defaultState
+styleable SuspendButtonLayout number distance image1 image2 image3 image4 image5 image6 imageMainClose imageMainOpen imageSize marginY
 styleable SwitchButton sb_background sb_border_width sb_button_color sb_checked sb_checked_color sb_checkline_color sb_checkline_width sb_effect_duration sb_enable_effect sb_shadow_color sb_shadow_effect sb_shadow_offset sb_shadow_radius sb_show_indicator sb_uncheck_color sb_uncheckcircle_color sb_uncheckcircle_radius sb_uncheckcircle_width
 styleable SwitchCompat android_textOn android_textOff android_thumb showText splitTrack switchMinWidth switchPadding switchTextAppearance thumbTextPadding thumbTint thumbTintMode track trackTint trackTintMode
 styleable SwitchMaterial useMaterialThemeColors
