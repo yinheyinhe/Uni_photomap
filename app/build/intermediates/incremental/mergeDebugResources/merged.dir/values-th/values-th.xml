@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <string msgid="5976598919945601918" name="abc_action_bar_home_description">"นำทางไปหน้าแรก"</string>
+    <string msgid="8388173803310557296" name="abc_action_bar_up_description">"กลับ"</string>
+    <string msgid="3937310113216875497" name="abc_action_menu_overflow_description">"ตัวเลือกอื่น"</string>
+    <string msgid="4692188335987374352" name="abc_action_mode_done">"เสร็จ"</string>
+    <string msgid="1189761859438369441" name="abc_activity_chooser_view_see_all">"ดูทั้งหมด"</string>
+    <string msgid="2165779757652331008" name="abc_activitychooserview_choose_application">"เลือกแอป"</string>
+    <string msgid="4215997306490295099" name="abc_capital_off">"ปิด"</string>
+    <string msgid="884982626291842264" name="abc_capital_on">"เปิด"</string>
+    <string msgid="8833365367933412986" name="abc_menu_alt_shortcut_label">"Alt+"</string>
+    <string msgid="2223301931652355242" name="abc_menu_ctrl_shortcut_label">"Ctrl+"</string>
+    <string msgid="838001238306846836" name="abc_menu_delete_shortcut_label">"ลบ"</string>
+    <string msgid="7986526966204849475" name="abc_menu_enter_shortcut_label">"Enter"</string>
+    <string msgid="375214403600139847" name="abc_menu_function_shortcut_label">"Function+"</string>
+    <string msgid="4192209724446364286" name="abc_menu_meta_shortcut_label">"Meta+"</string>
+    <string msgid="4741552369836443843" name="abc_menu_shift_shortcut_label">"Shift+"</string>
+    <string msgid="5473865519181928982" name="abc_menu_space_shortcut_label">"Space"</string>
+    <string msgid="6180552449598693998" name="abc_menu_sym_shortcut_label">"Sym+"</string>
+    <string msgid="5520303668377388990" name="abc_prepend_shortcut_label">"เมนู+"</string>
+    <string msgid="7208076849092622260" name="abc_search_hint">"ค้นหา…"</string>
+    <string msgid="3741173234950517107" name="abc_searchview_description_clear">"ล้างคำค้นหา"</string>
+    <string msgid="693312494995508443" name="abc_searchview_description_query">"คำค้นหา"</string>
+    <string msgid="3417662926640357176" name="abc_searchview_description_search">"ค้นหา"</string>
+    <string msgid="1486535517437947103" name="abc_searchview_description_submit">"ส่งคำค้นหา"</string>
+    <string msgid="2293578557972875415" name="abc_searchview_description_voice">"ค้นหาด้วยเสียง"</string>
+    <string msgid="8875138169939072951" name="abc_shareactionprovider_share_with">"แชร์กับ"</string>
+    <string msgid="9055268688411532828" name="abc_shareactionprovider_share_with_application">"แชร์ทาง <ns1:g id="APPLICATION_NAME">%s</ns1:g>"</string>
+    <string msgid="1656852541809559762" name="abc_toolbar_collapse_description">"ยุบ"</string>
+    <string name="arcgisruntime_client_cert_dialog_button_positive">ต่อไป</string>
+    <string name="arcgisruntime_client_cert_dialog_message">บริการนี้มีการร้องขอใบรับรองจากผู้ซื้อ ซึ่งต่อไปจะต้องมีการล๊อคหน้าจอ ปิดกล่องโต้ตอบนี้จะเปิดกล่องโต้ตอบ Android ที่คุณสามารถยกเลิกหรือเปลี่ยนแปลงประเภทการรักษาความปลอดภัยของคุณซึ่งจะช่วยให้คุณสามารถระบุใบรับรอง</string>
+    <string name="arcgisruntime_client_cert_dialog_title">ขอรับใบรับรองไคลเอ็นต์</string>
+    <string name="arcgisruntime_created_by">สร้างโดย %1$s</string>
+    <string name="arcgisruntime_created_by_day">สร้างโดย %1$s บน %2$s เมื่อ %3$s</string>
+    <string name="arcgisruntime_created_by_full">สร้างโดย %1$s บน %2$s เมื่อ %3$s</string>
+    <string name="arcgisruntime_created_by_hour">สร้างโดย %1$s หนึ่งชั่วโมงที่ผ่านมา</string>
+    <string name="arcgisruntime_created_by_hours">สร้างโดย %1$s %2$d ชั่วโมงที่ผ่านมา</string>
+    <string name="arcgisruntime_created_by_minute">สร้างโดย %1$s หนึ่งนาทีที่ผ่านมา</string>
+    <string name="arcgisruntime_created_by_minutes">สร้างโดย %1$s %2$d นาทีที่ผ่านมา</string>
+    <string name="arcgisruntime_created_by_seconds">สร้างโดย %1$s วินาทีที่ผ่านมา</string>
+    <string name="arcgisruntime_created_day">สร้างบน %1$s เมื่อ %2$s</string>
+    <string name="arcgisruntime_created_full">สร้างบน %1$s เมื่อ %2$s</string>
+    <string name="arcgisruntime_created_hour">สร้างเมื่อไม่กี่ชั่วโมงที่แล้ว</string>
+    <string name="arcgisruntime_created_hours">สร้าง %1$d ชั่วโมงที่ผ่านมา</string>
+    <string name="arcgisruntime_created_minute">สร้างเมื่อไม่กี่นาทีที่แล้ว</string>
+    <string name="arcgisruntime_created_minutes">สร้าง %1$d นาทีที่ผ่านมา</string>
+    <string name="arcgisruntime_created_seconds">สร้างเมื่อไม่กี่วินาทีที่แล้ว</string>
+    <string name="arcgisruntime_edited_by">แก้ไขโดย %1$s</string>
+    <string name="arcgisruntime_edited_by_day">แก้ไขโดย %1$s บน %2$s เมื่อ %3$s</string>
+    <string name="arcgisruntime_edited_by_full">แก้ไขโดย %1$s บน %2$s เมื่อ %3$s</string>
+    <string name="arcgisruntime_edited_by_hour">แก้ไขโดย %1$s หนึ่งชั่วโมงที่ผ่านมา</string>
+    <string name="arcgisruntime_edited_by_hours">แก้ไขโดย %1$s %2$d ชั่วโมงที่ผ่านมา</string>
+    <string name="arcgisruntime_edited_by_minute">แก้ไขโดย %1$s หนึ่งนาทีที่ผ่านมา</string>
+    <string name="arcgisruntime_edited_by_minutes">แก้ไขโดย %1$s %2$d นาทีที่ผ่านมา</string>
+    <string name="arcgisruntime_edited_by_seconds">แก้ไขโดย %1$s วินาทีที่ผ่านมา</string>
+    <string name="arcgisruntime_edited_day">แก้ไขบน %1$s เมื่อ %2$s</string>
+    <string name="arcgisruntime_edited_full">แก้ไขบน %1$s เมื่อ %2$s</string>
+    <string name="arcgisruntime_edited_hour">แก้ไขเมื่อชั่่วโมงที่แล้ว</string>
+    <string name="arcgisruntime_edited_hours">แก้ไข %1$d ชั่วโมงที่ผ่านมา</string>
+    <string name="arcgisruntime_edited_minute">แก้เมื่อนาทีที่แล้ว</string>
+    <string name="arcgisruntime_edited_minutes">แก้ไข %1$d นาทีที่ผ่านมา</string>
+    <string name="arcgisruntime_edited_seconds">แก้ไขเมื่อวินาทีที่แล้ว</string>
+    <string name="arcgisruntime_error_field_must_be_numeric">"ฟิลด์ตัวเลขจะต้องเป็นค่าตัวเลข"</string>
+    <string name="arcgisruntime_error_invalid_geoelement">"GeoElement ไม่ถูกต้อง"</string>
+    <string name="arcgisruntime_error_max_field_length">ค่าเกินความยาวฟิลด์สูงสุดของ %1$d</string>
+    <string name="arcgisruntime_error_null_value_not_allowed">"ไม่อนุญาตให้ใช้ค่านัลสำหรับฟิลด์ชื่อ `%1$s`"</string>
+    <string name="arcgisruntime_error_out_of_range">"ค่าอยู่นอกช่วงที่ถูกต้อง %1$s ถึง %2$s"</string>
+    <string name="arcgisruntime_http_auth_request_dialog_button_negative">ยกเลิก</string>
+    <string name="arcgisruntime_http_auth_request_dialog_button_positive">ล็อกอิน</string>
+    <string name="arcgisruntime_http_auth_request_dialog_invalid_credential">ชื่อผู้ใช้หรือรหัสผ่านไม่ถูกต้อง</string>
+    <string name="arcgisruntime_http_auth_request_dialog_password_hint">รหัสผ่าน</string>
+    <string name="arcgisruntime_http_auth_request_dialog_title">การตรวจสอบความถูกต้อง</string>
+    <string name="arcgisruntime_http_auth_request_dialog_username_hint">ชื่อผู้ใช้งาน</string>
+    <string name="arcgisruntime_na_CurrentLanguage">th</string>
+    <string name="arcgisruntime_range_domain_string">%1$s ถึง %2$s</string>
+    <string name="arcgisruntime_self_signed_dialog_button_negative">บล๊อก</string>
+    <string name="arcgisruntime_self_signed_dialog_button_positive">เชื่อถือได้</string>
+    <string name="arcgisruntime_self_signed_dialog_mismatched_host">เซิร์ฟเวอร์นี้ไม่สามารถพิสูจน์ตัวเอง; ใบรับรองความปลอดภัยจากโดเมนอื่น ซึ่งอาจเกิดจากการกำหนดหรือผู้โจมตีขัดขวางการเชื่อมต่อของคุณ คุณต้องการที่จะดำเนินการต่อไปหรือไม่?</string>
+    <string name="arcgisruntime_self_signed_dialog_mismatched_title">ชื่อโฮสต์ที่ไม่ตรงกัน</string>
+    <string name="arcgisruntime_self_signed_dialog_remember">จำได้ ?</string>
+    <string name="arcgisruntime_self_signed_dialog_untrusted_host">เซิร์ฟเวอร์นี้ไม่สามารถพิสูจน์ตัวเอง; ใบรับรองความปลอดภัยไม่น่าเชื่อถือโดยระบบปฏิบัติการของคุณ คุณต้องการที่จะดำเนินการต่อไปหรือไม่?</string>
+    <string name="arcgisruntime_self_signed_dialog_untrusted_title">โฮสต์ที่ไม่น่าเชื่อถือ</string>
+    <string name="arcgisruntime_sketcheditor_callout_clear">เคลียร์</string>
+    <string name="arcgisruntime_sketcheditor_callout_remove_vertex">ลบเวอเท็กซ์</string>
+    <string msgid="6264217191555673260" name="search_menu_title">"ค้นหา"</string>
+    <string msgid="6277540029070332960" name="status_bar_notification_info_overflow">"999+"</string>
+</resources>
