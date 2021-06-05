@@ -29,6 +29,7 @@ import androidx.core.content.ContextCompat;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
@@ -134,62 +135,74 @@ public class TestActivity extends Activity {
             switch (requestCode) {
                 case 1:
                     if (resultCode == RESULT_OK) {
+                        Bitmap bitmap = SharedData.cameraData;
+                        imageView.setImageBitmap(bitmap);
+
                         Bundle extras = data.getExtras();
                         String filename = extras.getString("camera_data");
-                        File file = new File(getExternalCacheDir(), filename);
-                        try {
-                            MediaStore.Images.Media.insertImage(getApplicationContext().getContentResolver(),file.getAbsolutePath(),filename,null);
+                        new Thread(()->{
+                            saveImageToGallery(this,SharedData.cameraData);
+                        }).start();
 
-                        }catch (FileNotFoundException e){
-                            e.printStackTrace();
-                        }
-                        System.out.println("发送广播");
-                        Uri uri = Uri.fromFile(file);
-                        getApplicationContext().sendBroadcast(new Intent(Intent.ACTION_MEDIA_SCANNER_SCAN_FILE,uri));
-                        byte[] cameraData = new byte[(int)file.length()];
-                        FileInputStream fis = new FileInputStream(file);
-                        fis.read(cameraData);
-//                    byte[] cameraData = extras.getByteArray("camera_data");
-                        if (cameraData != null) {
-                            Bitmap bitmap = BitmapFactory.decodeByteArray(cameraData, 0, cameraData.length);
-                            if (SharedData.cameraIndex == 1) {
-//                                Matrix m = new Matrix();
-//                                int rotate = 0;
-//                                if (degree == 90) {
-//                                    rotate = 270;
-//                                } else if (degree == 0) {
-//                                    rotate = 270;
-//                                } else if (degree == 180) {
-//                                    rotate = 90;
-//                                } else if (degree == 270) {
-//                                    rotate = 90;
-//                                }
-//                                m.setRotate(rotate, (float) bitmap.getWidth() / 2, (float) bitmap.getHeight() / 2);
-//                                final Bitmap bitmap1 = Bitmap.createBitmap(
-//                                        bitmap, 0, 0, bitmap.getWidth(), bitmap.getHeight(), m, true);
-                                imageView.setImageBitmap(bitmap);
-                            } else {
-//                                Matrix m = new Matrix();
-//                                int rotate = 0;
-//                                if (degree == 90) {
-//                                    rotate = 90;
-//                                } else if (degree == 0) {
-//                                    rotate = 90;
-//                                } else if (degree == 180) {
-//                                    rotate = -90;
-//                                } else if (degree == 270) {
-//                                    rotate = -90;
-//                                }
-//                                m.setRotate(rotate, (float) bitmap.getWidth() / 2, (float) bitmap.getHeight() / 2);
-//                                final Bitmap bitmap1 = Bitmap.createBitmap(
-//                                        bitmap, 0, 0, bitmap.getWidth(), bitmap.getHeight(), m, true);
-                                imageView.setImageBitmap(bitmap);
-                            }
-                        }
+//                        File file = new File(getExternalCacheDir(), filename);
+//                        try {
+//                            MediaStore.Images.Media.insertImage(getApplicationContext().getContentResolver(),file.getAbsolutePath(),filename,null);
+//
+//                        }catch (FileNotFoundException e){
+//                            e.printStackTrace();
+//                        }
+//                        new Thread(()->{
+//                            try{
+//                                System.out.println("发送广播");
+//                                Uri uri = Uri.fromFile(file);
+//                                getApplicationContext().sendBroadcast(new Intent(Intent.ACTION_MEDIA_SCANNER_SCAN_FILE,uri));
+//                                byte[] cameraData = new byte[(int)file.length()];
+//                                FileInputStream fis = new FileInputStream(file);
+//                                fis.read(cameraData);
+////                    byte[] cameraData = extras.getByteArray("camera_data");
+//                            }catch (Exception e){
+//                                e.printStackTrace();
+//                            }
+//
+//                        }).start();
+
                     }
             }
         } catch (Exception e) {
             e.printStackTrace();
         }
+    }
+
+    public static boolean saveImageToGallery(Context context, Bitmap bmp) {
+        // 首先保存图片
+        String storePath = context.getExternalFilesDir(null).getAbsolutePath() + File.separator + "dearxy";
+        File appDir = new File(storePath);
+        if (!appDir.exists()) {
+            appDir.mkdir();
+        }
+        String fileName = System.currentTimeMillis() + ".jpg";
+        File file = new File(appDir, fileName);
+        try {
+            FileOutputStream fos = new FileOutputStream(file);
+            //通过io流的方式来压缩保存图片
+            boolean isSuccess = bmp.compress(Bitmap.CompressFormat.JPEG, 60, fos);
+            fos.flush();
+            fos.close();
+
+            //把文件插入到系统图库
+            MediaStore.Images.Media.insertImage(context.getContentResolver(), file.getAbsolutePath(), fileName, null);
+
+            //保存图片后发送广播通知更新数据库
+            Uri uri = Uri.fromFile(file);
+            context.sendBroadcast(new Intent(Intent.ACTION_MEDIA_SCANNER_SCAN_FILE, uri));
+            if (isSuccess) {
+                return true;
+            } else {
+                return false;
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return false;
     }
 }

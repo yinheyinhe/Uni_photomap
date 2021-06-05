@@ -6,17 +6,17 @@ com/HBuilder/UniPlugin/SharedData.java
  com.HBuilder.UniPlugin.SharedData
 com/HBuilder/UniPlugin/CameraPreView.java
  com.HBuilder.UniPlugin.CameraPreView
+com/HBuilder/UniPlugin/SelfCameraActivity.java
+ com.HBuilder.UniPlugin.SelfCameraActivity
+ com.HBuilder.UniPlugin.SelfCameraActivity$1
+com/HBuilder/UniPlugin/BuildConfig.java
+ com.HBuilder.UniPlugin.BuildConfig
+com/HBuilder/UniPlugin/MainActivity.java
+ com.HBuilder.UniPlugin.MainActivity
+ com.HBuilder.UniPlugin.MainActivity$1
+ com.HBuilder.UniPlugin.MainActivity$2
 com/HBuilder/UniPlugin/TestActivity.java
  com.HBuilder.UniPlugin.TestActivity
  com.HBuilder.UniPlugin.TestActivity$1
  com.HBuilder.UniPlugin.TestActivity$2
  com.HBuilder.UniPlugin.TestActivity$3
-com/HBuilder/UniPlugin/BuildConfig.java
- com.HBuilder.UniPlugin.BuildConfig
-com/HBuilder/UniPlugin/SelfCameraActivity.java
- com.HBuilder.UniPlugin.SelfCameraActivity
- com.HBuilder.UniPlugin.SelfCameraActivity$1
-com/HBuilder/UniPlugin/MainActivity.java
- com.HBuilder.UniPlugin.MainActivity
- com.HBuilder.UniPlugin.MainActivity$1
- com.HBuilder.UniPlugin.MainActivity$2

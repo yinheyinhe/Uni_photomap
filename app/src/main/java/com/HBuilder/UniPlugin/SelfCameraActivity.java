@@ -9,6 +9,7 @@ import android.graphics.Matrix;
 import android.hardware.Camera;
 import android.graphics.Paint;
 import android.graphics.PixelFormat;
+import android.net.Uri;
 import android.os.Bundle;
 import android.provider.ContactsContract;
 import android.util.Log;
@@ -178,16 +179,11 @@ public class SelfCameraActivity extends Activity implements View.OnClickListener
                 m.setRotate(rotate, (float) bitmap.getWidth() / 2, (float) bitmap.getHeight() / 2);
                 Bitmap bitmap1 = Bitmap.createBitmap(
                         bitmap, 0, 0, bitmap.getWidth(), bitmap.getHeight(), m, true);
-
-                File outputImage = new File(getExternalCacheDir(),"output_image.jpg");
-                outputImage.createNewFile();
-                FileOutputStream fos = new FileOutputStream(outputImage);
-                bitmap1.compress(Bitmap.CompressFormat.JPEG, 100, fos);
-                fos.close();
+                SharedData.cameraData = bitmap1;
                 Intent intent = new Intent();
                 intent.putExtra("camera_data","output_image.jpg");
                 setResult(RESULT_OK,intent);
-            }catch (IOException e){
+            }catch (Exception e){
                 e.printStackTrace();
             }
 

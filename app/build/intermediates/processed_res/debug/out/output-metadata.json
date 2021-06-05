@@ -5,7 +5,7 @@
     "kind": "Directory"
   },
   "applicationId": "com.HBuilder.UniPlugin",
-  "variantName": "debug",
+  "variantName": "processDebugResources",
   "elements": [
     {
       "type": "SINGLE",
