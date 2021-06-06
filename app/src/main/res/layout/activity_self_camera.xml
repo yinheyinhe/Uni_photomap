@@ -10,6 +10,7 @@
         android:id="@+id/camera_layout"
         android:layout_weight="1">
 
+
         <com.HBuilder.UniPlugin.CameraPreView
             android:id="@+id/cf_frame_camera_sv"
             android:layout_width="match_parent"
@@ -27,11 +28,10 @@
             android:textSize="20sp"/>
 
 
-
         <ImageView
             android:id="@+id/private_cf_frame_iv"
-            android:layout_width="359dp"
-            android:layout_height="381dp"
+            android:layout_width="371dp"
+            android:layout_height="448dp"
             android:layout_centerInParent="true"
             android:layout_marginStart="40dp"
             android:layout_marginTop="40dp"

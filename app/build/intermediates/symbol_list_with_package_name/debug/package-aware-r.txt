@@ -1779,6 +1779,7 @@ drawable duigou
 drawable fanhui
 drawable fanhui1
 drawable fanzhuan
+drawable fanzhuan1
 drawable ic_launcher_background
 drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black

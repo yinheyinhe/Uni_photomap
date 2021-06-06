@@ -16,6 +16,10 @@
         "source": "E:\\mymap\\Uni_photomap\\app\\src\\main\\res\\drawable\\duigou.jpg"
     },
     {
+        "merged": "E:\\mymap\\Uni_photomap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_fanzhuan1.png.flat",
+        "source": "E:\\mymap\\Uni_photomap\\app\\src\\main\\res\\drawable\\fanzhuan1.png"
+    },
+    {
         "merged": "E:\\mymap\\Uni_photomap\\app\\build\\intermediates\\res\\merged\\debug\\drawable_fanhui1.png.flat",
         "source": "E:\\mymap\\Uni_photomap\\app\\src\\main\\res\\drawable\\fanhui1.png"
     },

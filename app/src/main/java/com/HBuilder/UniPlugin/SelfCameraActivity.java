@@ -37,6 +37,7 @@ public class SelfCameraActivity extends Activity implements View.OnClickListener
     private ImageView takePhoto;
     private ImageView takePhotoConfirm;
     private ImageView takePhotoCancle;
+
     private TextView takePhotoTips;
     private TextView location;
     private ImageView faceSurface;
@@ -52,6 +53,7 @@ public class SelfCameraActivity extends Activity implements View.OnClickListener
         location = findViewById(R.id.location);
 
 
+
         takePhotoTips.setText("请调整图像处于正方形内");
         faceSurface = findViewById(R.id.private_cf_frame_iv);
         takePhotoAgain = findViewById(R.id.cf_shoot_again_btn);
@@ -64,7 +66,7 @@ public class SelfCameraActivity extends Activity implements View.OnClickListener
         }
         cameraPreView = findViewById(R.id.cf_frame_camera_sv);
         mCamera = Camera.open(SharedData.cameraIndex);
-//        Camera.Parameters mParameters = mCamera.getParameters();
+       // Camera.Parameters mParameters = mCamera.getParameters();
 //        List<Camera.Size> sizeList = mParameters.getSupportedPreviewSizes();
 //        for (Camera.Size size:sizeList){
 //            Log.e(TAG,"onClick:w: " +size.width+"h: "+size.height);
@@ -72,8 +74,11 @@ public class SelfCameraActivity extends Activity implements View.OnClickListener
 //        mParameters.setPictureSize(1440,1080);
 //        mParameters.setPreviewFrameRate(20);
 //        mCamera.setParameters(mParameters);
+        //mParameters.setFocusMode(Camera.Parameters.FOCUS_MODE_CONTINUOUS_PICTURE);
+       // mCamera.setParameters(mParameters);
         setCameraDisplayOrientation(0, mCamera);
         cameraPreView.setCamera(mCamera);
+
 //        cameraPreView.surfaceCreated(cameraPreView.getHolder());
     }
     public void setCameraDisplayOrientation(int cameraId, android.hardware.Camera camera) {
@@ -104,19 +109,17 @@ public class SelfCameraActivity extends Activity implements View.OnClickListener
     public void onClick(View v){
 
         switch (v.getId()){
-            case R.id.cf_shot_btn:
+            case R.id.cf_shot_btn://拍摄
                 takePicture();
                 break;
-            case R.id.cf_shoot_again_btn:
+            case R.id.cf_shoot_again_btn://重拍
                 takePictureAgain();
                 break;
-            //case R.id.change_camera:
-                //transforCamera();
-                //break;
-            case R.id.cf_confirm_btn:
+
+            case R.id.cf_confirm_btn://确定
                 confirmTakePicture();
                 break;
-            case R.id.camera_cancle_button:
+            case R.id.camera_cancle_button://取消
                 takePictureCancle();
                 break;
         }
@@ -146,6 +149,7 @@ public class SelfCameraActivity extends Activity implements View.OnClickListener
                 mData = data;
             }
         });
+        //GONE不可见且不占空间，INVISIBLE不可见但占用空间
         takePhoto.setVisibility(View.GONE);
         takePhotoCancle.setVisibility(View.GONE);
         takePhotoAgain.setVisibility(View.VISIBLE);
@@ -159,6 +163,7 @@ public class SelfCameraActivity extends Activity implements View.OnClickListener
         SharedData.selfCameraFlag=false;
         takePhoto.setVisibility(View.VISIBLE);
         takePhotoCancle.setVisibility(View.VISIBLE);
+
         cameraPreView.surfaceCreated(cameraPreView.getHolder());
         takePhotoAgain.setVisibility(View.GONE);
         takePhotoConfirm.setVisibility(View.GONE);
@@ -181,6 +186,7 @@ public class SelfCameraActivity extends Activity implements View.OnClickListener
                         bitmap, 0, 0, bitmap.getWidth(), bitmap.getHeight(), m, true);
                 SharedData.cameraData = bitmap1;
                 Intent intent = new Intent();
+                //第一个是键名，第二个是键对应的值
                 intent.putExtra("camera_data","output_image.jpg");
                 setResult(RESULT_OK,intent);
             }catch (Exception e){

@@ -63,12 +63,17 @@ public class CameraPreView extends SurfaceView implements SurfaceHolder.Callback
         }catch (Exception e){
 
         }
+        Camera.Parameters parameters = mCamera.getParameters();
+        parameters.setFocusMode(Camera.Parameters.FOCUS_MODE_CONTINUOUS_PICTURE);
+        mCamera.setParameters(parameters);
         try {
+
             mCamera.setPreviewDisplay(mHolder);
             mCamera.startPreview();
         }catch (Exception e){
             Log.d("this","Error starting camera preview: " + e.getMessage());
         }
+        mCamera.cancelAutoFocus();
     }
 
 }

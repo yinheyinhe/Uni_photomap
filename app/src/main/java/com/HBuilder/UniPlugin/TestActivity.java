@@ -79,6 +79,7 @@ public class TestActivity extends Activity {
     private void openCamera() {
         if (ContextCompat.checkSelfPermission(TestActivity.this,
                 Manifest.permission.WRITE_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
+            //申请权限，REQUEST_TAKE_PHOTO_PERMISSION是自定义常量
             ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.CAMERA, Manifest.permission.WRITE_EXTERNAL_STORAGE}, 1);
 
         } else {
@@ -95,6 +96,7 @@ public class TestActivity extends Activity {
                 PackageManager pm = context.getPackageManager();
                 try {
                     PackageInfo pi = pm.getPackageInfo(context.getPackageName(), 0);
+                    //得到自己的包名
                     String pkgName = pi.packageName;
                     //Log.e(TAG,"requestPermission:  "+ pkgName);
                     PackageInfo pkgInfo = pm.getPackageInfo(pkgName, PackageManager.GET_PERMISSIONS);
@@ -185,7 +187,7 @@ public class TestActivity extends Activity {
         try {
             FileOutputStream fos = new FileOutputStream(file);
             //通过io流的方式来压缩保存图片
-            boolean isSuccess = bmp.compress(Bitmap.CompressFormat.JPEG, 60, fos);
+            boolean isSuccess = bmp.compress(Bitmap.CompressFormat.JPEG, 100, fos);
             fos.flush();
             fos.close();
 
