@@ -10,35 +10,28 @@
     <com.esri.arcgisruntime.mapping.view.MapView
         android:id="@+id/mapView"
         android:layout_width="match_parent"
-        android:layout_height="650dp"
+        android:layout_height="match_parent"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="-16dp"
         tools:layout_editor_absoluteY="51dp">
+
         <com.laocaixw.layout.SuspendButtonLayout
             android:id="@+id/layout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             suspend:distance="80dp"
-            suspend:imageSize="50dp"
-            suspend:marginY="100dp"
-            suspend:number="6"
-            suspend:imageMainOpen="@mipmap/suspend_main_open"
-            suspend:imageMainClose="@mipmap/suspend_main_close"
             suspend:image1="@mipmap/suspend_1"
             suspend:image2="@mipmap/suspend_2"
             suspend:image3="@mipmap/suspend_3"
             suspend:image4="@mipmap/suspend_4"
             suspend:image5="@mipmap/suspend_5"
-            suspend:image6="@mipmap/suspend_6">
-        </com.laocaixw.layout.SuspendButtonLayout>
+            suspend:image6="@mipmap/suspend_6"
+            suspend:imageMainClose="@mipmap/suspend_main_close"
+            suspend:imageMainOpen="@mipmap/suspend_main_open"
+            suspend:imageSize="50dp"
+            suspend:marginY="100dp"
+            suspend:number="6"></com.laocaixw.layout.SuspendButtonLayout>
 
     </com.esri.arcgisruntime.mapping.view.MapView>
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:text="地图"
-        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

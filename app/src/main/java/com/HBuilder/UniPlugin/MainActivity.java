@@ -1,23 +1,42 @@
 package com.HBuilder.UniPlugin;
+
 import android.Manifest;
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.location.Address;
+import android.location.Geocoder;
+import android.location.Location;
+import android.location.LocationManager;
 import android.os.Build;
 import android.os.Bundle;
+import android.util.Log;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
+import com.esri.arcgisruntime.ArcGISRuntimeEnvironment;
+import com.esri.arcgisruntime.io.RequestConfiguration;
+import com.esri.arcgisruntime.layers.WebTiledLayer;
+import com.esri.arcgisruntime.location.LocationDataSource;
+import com.esri.arcgisruntime.mapping.ArcGISMap;
+import com.esri.arcgisruntime.mapping.Basemap;
+import com.esri.arcgisruntime.mapping.view.DefaultMapViewOnTouchListener;
+import com.esri.arcgisruntime.mapping.view.LocationDisplay;
+import com.esri.arcgisruntime.mapping.view.MapView;
 import com.laocaixw.layout.SuspendButtonLayout;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
-
+import java.util.Locale;
 
 
 public class MainActivity extends Activity {
@@ -25,13 +44,98 @@ public class MainActivity extends Activity {
     private static final int REQUEST_CODE = 1;
     private String[] suspendChildButtonInfo = {"相机", "音乐", "地图", "亮度", "联系人", "短信"};
 
+    private MapView mapView;
+    private LocationDisplay locationDisplay;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        ArcGISRuntimeEnvironment.setLicense("runtimelite,1000,rud4449636536,none,NKMFA0PL4S0DRJE15166");
+        mapView = findViewById(R.id.mapView);
+        mapView.setAttributionTextVisible(false);
         requestAuthorities();
+        startLocation();
         init();
+    }
+    //加载地图定位
+    private void startLocation() {
+        //注意：在100.2.0之后要设置RequestConfiguration
+        RequestConfiguration requestConfiguration = new RequestConfiguration();
+        requestConfiguration.getHeaders().put("referer", "http://www.arcgis.com");
+
+// 加载天地图层-电子地图
+        WebTiledLayer vecordBaseTiledLayer = TianDiTuMethodsClass.CreateTianDiTuTiledLayer(TianDiTuMethodsClass.LayerType.TIANDITU_VECTOR_MERCATOR);
+// 加载中文标注图层-电子地图
+        WebTiledLayer vecordWordTiledLayer = TianDiTuMethodsClass.CreateTianDiTuTiledLayer(TianDiTuMethodsClass.LayerType.TIANDITU_VECTOR_ANNOTATION_CHINESE_MERCATOR);
+
+        vecordBaseTiledLayer.setRequestConfiguration(requestConfiguration);
+        vecordWordTiledLayer.setRequestConfiguration(requestConfiguration);
+
+        vecordBaseTiledLayer.loadAsync();
+        vecordWordTiledLayer.loadAsync();
+
+        Basemap basemap = new Basemap();
+
+        basemap.getBaseLayers().add(vecordBaseTiledLayer);
+        basemap.getBaseLayers().add(vecordWordTiledLayer);
+
+        ArcGISMap arcGISMap = new ArcGISMap(basemap);
+        mapView.setMap(arcGISMap);
+        this.mapView.setOnTouchListener(new DefaultMapViewOnTouchListener(this,mapView) {
+            @Override
+            public boolean onRotate(MotionEvent motionEvent, double v) {
+                return false;
+            }
+        });
+        locationDisplay = mapView.getLocationDisplay();
+        locationDisplay.setAutoPanMode(LocationDisplay.AutoPanMode.COMPASS_NAVIGATION);
+        locationDisplay.startAsync();
+
+    }
+    //获取当前位置的信息
+    private List<String> getLocation() throws IOException {
+        LocationManager locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
+        StringBuilder place = new StringBuilder();
+        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION)
+                != PackageManager.PERMISSION_GRANTED
+                && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION)
+                != PackageManager.PERMISSION_GRANTED) {
+            // TODO: Consider calling
+            //    ActivityCompat#requestPermissions
+            // here to request the missing permissions, and then overriding
+            //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
+            //                                          int[] grantResults)
+            // to handle the case where the user grants the permission. See the documentation
+            // for ActivityCompat#requestPermissions for more details.
+
+        }
+        Location location = locationManager.getLastKnownLocation(locationManager.NETWORK_PROVIDER);
+        List<Address> result = null;
+        Geocoder gc = new Geocoder(this, Locale.getDefault());
+        result = gc.getFromLocation(location.getLatitude(),
+                location.getLongitude(), 1);
+
+
+        if (result.size() > 0) {
+            Address address = result.get(0);
+            place.append(address.getLocality())
+                    .append(address.getSubLocality())
+                    .append(address.getFeatureName())
+                    .append("附近");
+        }
+
+        List<String> point = new ArrayList<>();
+        point.add(place.toString());
+        point.add(String.valueOf(location.getLatitude()));
+        point.add(String.valueOf(location.getLongitude()));
+        return point;
+    }
+    //回到当前位置
+    private void nowLocation() {
+        locationDisplay = mapView.getLocationDisplay();
+        locationDisplay.setAutoPanMode(LocationDisplay.AutoPanMode.COMPASS_NAVIGATION);
+        locationDisplay.startAsync();
     }
     private String[] getManifextPermissions() {
         // all permissions in AndroidManifext.xml
@@ -129,8 +233,5 @@ public class MainActivity extends Activity {
         Intent intent = new Intent(getApplicationContext(),TestActivity.class);
         startActivity(intent);
     }
-
-
-
 
 }

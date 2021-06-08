@@ -1666,7 +1666,6 @@ drawable abc_vector_test
 drawable ad_dcloud_main_ad_tag
 drawable ad_dcloud_main_skip_bg
 drawable ad_dcloud_main_skip_shape
-drawable again
 drawable again1
 drawable arcgisruntime_location_display_acquiring_symbol
 drawable arcgisruntime_location_display_compass_symbol
@@ -1776,10 +1775,7 @@ drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
 drawable duigou
-drawable fanhui
 drawable fanhui1
-drawable fanzhuan
-drawable fanzhuan1
 drawable ic_launcher_background
 drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
@@ -1824,7 +1820,6 @@ drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable offline_pin
 drawable offline_pin_round
-drawable paishe
 drawable paishe1
 drawable push
 drawable shortcut_permission_guide_bg
@@ -1843,7 +1838,6 @@ drawable side_bar_refresh
 drawable side_bar_share
 drawable sidebar_shortcut
 drawable splash
-drawable take_photo
 drawable take_photo1
 drawable test_custom_background
 drawable toast_bg
@@ -1969,7 +1963,6 @@ id btn_back
 id btn_clip
 id btn_text
 id btn_undo
-id button
 id buttonPanel
 id camera_cancle_button
 id camera_layout
@@ -2532,7 +2525,6 @@ layout image_layout_gallery_menu_item
 layout image_layout_gallery_pop
 layout image_layout_image
 layout image_text_dialog
-layout map
 layout mtrl_alert_dialog
 layout mtrl_alert_dialog_actions
 layout mtrl_alert_dialog_title

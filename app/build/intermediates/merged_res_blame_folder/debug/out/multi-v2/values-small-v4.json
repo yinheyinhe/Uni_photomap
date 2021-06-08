@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "E:\\mymap\\Uni_photomap\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-small-v4\\values-small-v4.xml",
+            "outputFile": "D:\\Uni_photomap\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-small-v4\\values-small-v4.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\86188\\.gradle\\wrapper\\dists\\gradle-6.1.1\\wrapper\\dists\\gradle-6.1.1-all\\caches\\transforms-2\\files-2.1\\cba993e8830c2eb4ef6be18d4a54648a\\material-1.2.1\\res\\values-small-v4\\values-small-v4.xml",
+                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\cba993e8830c2eb4ef6be18d4a54648a\\material-1.2.1\\res\\values-small-v4\\values-small-v4.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",

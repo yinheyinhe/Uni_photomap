@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "E:\\mymap\\Uni_photomap\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ko\\values-ko.xml",
+            "outputFile": "D:\\Uni_photomap\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ko\\values-ko.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\86188\\.gradle\\wrapper\\dists\\gradle-6.1.1\\wrapper\\dists\\gradle-6.1.1-all\\caches\\transforms-2\\files-2.1\\4df0d1df33a6011551db18f1a6ce712c\\appcompat-1.2.0\\res\\values-ko\\values-ko.xml",
+                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\4df0d1df33a6011551db18f1a6ce712c\\appcompat-1.2.0\\res\\values-ko\\values-ko.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -21,24 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\86188\\.gradle\\wrapper\\dists\\gradle-6.1.1\\wrapper\\dists\\gradle-6.1.1-all\\caches\\transforms-2\\files-2.1\\0962f975f5b7eba2f6ae0625531ec238\\core-1.3.1\\res\\values-ko\\values-ko.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "85",
-                        "startColumns": "4",
-                        "startOffsets": "7383",
-                        "endColumns": "100",
-                        "endOffsets": "7479"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\86188\\.gradle\\wrapper\\dists\\gradle-6.1.1\\wrapper\\dists\\gradle-6.1.1-all\\caches\\transforms-2\\files-2.1\\a6ec10322adecb6bf19585c74e3b97c7\\jetified-arcgis-android-100.8.0\\res\\values-ko\\values-ko.xml",
+                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\a6ec10322adecb6bf19585c74e3b97c7\\jetified-arcgis-android-100.8.0\\res\\values-ko\\values-ko.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -52,6 +35,23 @@
                         "startOffsets": "2685,2765,2961,3043,3109,3192,3276,3354,3436,3515,3598,3679,3750,3822,3889,3959,4026,4097,4166,4231,4313,4396,4473,4554,4632,4714,4794,4864,4935,5001,5070,5136,5206,5274,5366,5450,5538,5643,5734,5820,5907,6018,6104,6183,6271,6335,6407,6487,6567,6746,6839,6916,7055,7145,7220",
                         "endColumns": "79,195,81,65,82,83,77,81,78,82,80,70,71,66,69,66,70,68,64,81,82,76,80,77,81,79,69,70,65,68,65,69,67,91,83,87,104,90,85,86,110,85,78,87,63,71,79,79,178,92,76,138,89,74,83",
                         "endOffsets": "2760,2956,3038,3104,3187,3271,3349,3431,3510,3593,3674,3745,3817,3884,3954,4021,4092,4161,4226,4308,4391,4468,4549,4627,4709,4789,4859,4930,4996,5065,5131,5201,5269,5361,5445,5533,5638,5729,5815,5902,6013,6099,6178,6266,6330,6402,6482,6562,6741,6834,6911,7050,7140,7215,7299"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\0962f975f5b7eba2f6ae0625531ec238\\core-1.3.1\\res\\values-ko\\values-ko.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "85",
+                        "startColumns": "4",
+                        "startOffsets": "7383",
+                        "endColumns": "100",
+                        "endOffsets": "7479"
                     }
                 }
             ]
