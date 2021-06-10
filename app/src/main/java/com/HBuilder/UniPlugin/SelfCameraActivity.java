@@ -7,10 +7,13 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Matrix;
 import android.hardware.Camera;
-import android.graphics.Paint;
-import android.graphics.PixelFormat;
-import android.net.Uri;
+import android.hardware.Sensor;
+import android.hardware.SensorEvent;
+import android.hardware.SensorEventListener;
+import android.hardware.SensorManager;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Message;
 import android.provider.ContactsContract;
 import android.util.Log;
 import android.view.MotionEvent;
@@ -37,8 +40,12 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.List;
+import java.util.Timer;
+import java.util.TimerTask;
 
-public class SelfCameraActivity extends Activity implements View.OnClickListener {
+import static java.lang.Thread.sleep;
+
+public class SelfCameraActivity extends Activity implements View.OnClickListener, SensorEventListener {
 
     private static final String TAG = "CFActivity";
     public static final String FILE_NAME = "filename";
@@ -48,6 +55,18 @@ public class SelfCameraActivity extends Activity implements View.OnClickListener
     private ImageView takePhoto;
     private ImageView takePhotoConfirm;
     private ImageView takePhotoCancle;
+    //方向传感器数据
+    private CompassView cView;
+    private SensorManager sManager;
+    private Sensor mSensorOrientation;
+
+    //测试数据
+    private int count=0;
+
+    //handler参数
+    private mHandler mhandler = new mHandler();
+
+
 
     private TextView takePhotoTips;
     private TextView location;
@@ -57,17 +76,33 @@ public class SelfCameraActivity extends Activity implements View.OnClickListener
 
     private MapView mapView;
     private Button button;
+    private TextView sensorlocation;
+
+    //timer计时器
+    TimerTask timetask=new TimerTask() {
+        @Override
+        public void run() {
+
+            Message msg = Message.obtain();
+            msg.what = 1;
+
+            //handler传输信息
+
+            mhandler.sendMessage(msg);
+
+
+        }
+    };
 
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_self_camera);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+
+        //赋值·语句
         takePhotoTips = findViewById(R.id.cf_tips_tv);
         location = findViewById(R.id.location);
-
-
-
         takePhotoTips.setText("请调整图像处于正方形内");
         faceSurface = findViewById(R.id.private_cf_frame_iv);
         takePhotoAgain = findViewById(R.id.cf_shoot_again_btn);
@@ -75,31 +110,39 @@ public class SelfCameraActivity extends Activity implements View.OnClickListener
         takePhotoConfirm = findViewById(R.id.cf_confirm_btn);
         takePhotoCancle = findViewById(R.id.camera_cancle_button);
         button = findViewById(R.id.button);
+
+        //按钮点击事件
         OnClickUtil.setOnclick(this,takePhotoAgain,takePhoto,takePhotoConfirm,takePhotoCancle,button);
         if (getIntent()!=null){
             fileName = getIntent().getStringExtra(FILE_NAME);
         }
+
+        //组件查找
         cameraPreView = findViewById(R.id.cf_frame_camera_sv);
         mCamera = Camera.open(SharedData.cameraIndex);
-       // Camera.Parameters mParameters = mCamera.getParameters();
-//        List<Camera.Size> sizeList = mParameters.getSupportedPreviewSizes();
-//        for (Camera.Size size:sizeList){
-//            Log.e(TAG,"onClick:w: " +size.width+"h: "+size.height);
-//        }
-//        mParameters.setPictureSize(1440,1080);
-//        mParameters.setPreviewFrameRate(20);
-//        mCamera.setParameters(mParameters);
-        //mParameters.setFocusMode(Camera.Parameters.FOCUS_MODE_CONTINUOUS_PICTURE);
-       // mCamera.setParameters(mParameters);
+
         setCameraDisplayOrientation(0, mCamera);
         cameraPreView.setCamera(mCamera);
-
-//        cameraPreView.surfaceCreated(cameraPreView.getHolder());
-
         ArcGISRuntimeEnvironment.setLicense("runtimelite,1000,rud4449636536,none,NKMFA0PL4S0DRJE15166");
         mapView = findViewById(R.id.mapView);
         mapView.setAttributionTextVisible(false);
         startLocation();
+
+
+        //方向传感器
+        init();
+
+    }
+    //方向传感器
+    public void init(){
+        sensorlocation=(TextView)findViewById(R.id.location);
+        cView = new CompassView();
+        sManager = (SensorManager) getSystemService(SENSOR_SERVICE);
+        mSensorOrientation = sManager.getDefaultSensor(Sensor.TYPE_ORIENTATION);
+        sManager.registerListener(this, mSensorOrientation, SensorManager.SENSOR_DELAY_UI);
+        //开启handler
+        Timer timer=new Timer();
+        timer.schedule(timetask,1000,1000);
     }
     public void setCameraDisplayOrientation(int cameraId, android.hardware.Camera camera) {
         android.hardware.Camera.CameraInfo info =
@@ -264,5 +307,25 @@ public class SelfCameraActivity extends Activity implements View.OnClickListener
         locationDisplay.setAutoPanMode(LocationDisplay.AutoPanMode.COMPASS_NAVIGATION);
         locationDisplay.startAsync();
 
+    }
+
+    @Override
+    public void onSensorChanged(SensorEvent event) {
+        cView.setDegree(event.values[0]);
+    }
+
+    @Override
+    public void onAccuracyChanged(Sensor sensor, int accuracy) {
+
+    }
+    //handler类更新
+    class mHandler extends Handler{
+        @Override
+        public void handleMessage(Message msg){
+            super.handleMessage(msg);
+
+            sensorlocation.setText(cView.getMsg());
+
+        }
     }
 }

@@ -3,6 +3,10 @@ com/HBuilder/UniPlugin/MainActivity.java
  com.HBuilder.UniPlugin.MainActivity$1
  com.HBuilder.UniPlugin.MainActivity$2
  com.HBuilder.UniPlugin.MainActivity$3
+com/HBuilder/UniPlugin/CompassView.java
+ com.HBuilder.UniPlugin.CompassView
+com/HBuilder/UniPlugin/ScreenUtil.java
+ com.HBuilder.UniPlugin.ScreenUtil
 com/HBuilder/UniPlugin/SharedData.java
  com.HBuilder.UniPlugin.SharedData
 com/HBuilder/UniPlugin/CameraPreView.java
@@ -22,5 +26,7 @@ com/HBuilder/UniPlugin/SelfCameraActivity.java
  com.HBuilder.UniPlugin.SelfCameraActivity
  com.HBuilder.UniPlugin.SelfCameraActivity$1
  com.HBuilder.UniPlugin.SelfCameraActivity$2
+ com.HBuilder.UniPlugin.SelfCameraActivity$3
+ com.HBuilder.UniPlugin.SelfCameraActivity$mHandler
 com/HBuilder/UniPlugin/OnClickUtil.java
  com.HBuilder.UniPlugin.OnClickUtil

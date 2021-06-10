@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\Uni_photomap\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-h480dp-land-v13\\values-h480dp-land-v13.xml",
+            "outputFile": "D:\\grade3\\systemprogram\\Uni_photomap\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-h480dp-land-v13\\values-h480dp-land-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\cba993e8830c2eb4ef6be18d4a54648a\\material-1.2.1\\res\\values-h480dp-land-v13\\values-h480dp-land-v13.xml",
+                    "source": "C:\\Users\\Magic\\.gradle\\caches\\transforms-2\\files-2.1\\7213920ce56ceed469c1efaf566dd65c\\material-1.2.1\\res\\values-h480dp-land-v13\\values-h480dp-land-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10",
                         "startColumns": "4,4,4,4,4,4,4,4,4",

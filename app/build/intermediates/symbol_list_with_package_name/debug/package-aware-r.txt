@@ -1963,6 +1963,7 @@ id btn_back
 id btn_clip
 id btn_text
 id btn_undo
+id button
 id buttonPanel
 id camera_cancle_button
 id camera_layout
