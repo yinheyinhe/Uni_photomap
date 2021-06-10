@@ -13,7 +13,9 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.provider.ContactsContract;
 import android.util.Log;
+import android.view.MotionEvent;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.view.SurfaceView;
@@ -21,6 +23,15 @@ import android.view.Surface;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.esri.arcgisruntime.ArcGISRuntimeEnvironment;
+import com.esri.arcgisruntime.io.RequestConfiguration;
+import com.esri.arcgisruntime.layers.WebTiledLayer;
+import com.esri.arcgisruntime.mapping.ArcGISMap;
+import com.esri.arcgisruntime.mapping.Basemap;
+import com.esri.arcgisruntime.mapping.view.DefaultMapViewOnTouchListener;
+import com.esri.arcgisruntime.mapping.view.LocationDisplay;
+import com.esri.arcgisruntime.mapping.view.MapView;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -44,6 +55,9 @@ public class SelfCameraActivity extends Activity implements View.OnClickListener
     private byte[] mData;
     private String fileName;
 
+    private MapView mapView;
+    private Button button;
+
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
@@ -60,7 +74,8 @@ public class SelfCameraActivity extends Activity implements View.OnClickListener
         takePhoto = findViewById(R.id.cf_shot_btn);
         takePhotoConfirm = findViewById(R.id.cf_confirm_btn);
         takePhotoCancle = findViewById(R.id.camera_cancle_button);
-        OnClickUtil.setOnclick(this,takePhotoAgain,takePhoto,takePhotoConfirm,takePhotoCancle);
+        button = findViewById(R.id.button);
+        OnClickUtil.setOnclick(this,takePhotoAgain,takePhoto,takePhotoConfirm,takePhotoCancle,button);
         if (getIntent()!=null){
             fileName = getIntent().getStringExtra(FILE_NAME);
         }
@@ -80,6 +95,11 @@ public class SelfCameraActivity extends Activity implements View.OnClickListener
         cameraPreView.setCamera(mCamera);
 
 //        cameraPreView.surfaceCreated(cameraPreView.getHolder());
+
+        ArcGISRuntimeEnvironment.setLicense("runtimelite,1000,rud4449636536,none,NKMFA0PL4S0DRJE15166");
+        mapView = findViewById(R.id.mapView);
+        mapView.setAttributionTextVisible(false);
+        startLocation();
     }
     public void setCameraDisplayOrientation(int cameraId, android.hardware.Camera camera) {
         android.hardware.Camera.CameraInfo info =
@@ -121,6 +141,9 @@ public class SelfCameraActivity extends Activity implements View.OnClickListener
                 break;
             case R.id.camera_cancle_button://取消
                 takePictureCancle();
+                break;
+            case R.id.button:
+                mapback();
                 break;
         }
     }
@@ -202,5 +225,44 @@ public class SelfCameraActivity extends Activity implements View.OnClickListener
 
     private void takePictureCancle(){SelfCameraActivity.this.finish();}
 
+    private void mapback() {
+        Intent intent = new Intent(getApplicationContext(),MainActivity.class);
+        startActivity(intent);
+    }
 
+    //加载地图定位
+    private void startLocation() {
+        //注意：在100.2.0之后要设置RequestConfiguration
+        RequestConfiguration requestConfiguration = new RequestConfiguration();
+        requestConfiguration.getHeaders().put("referer", "http://www.arcgis.com");
+
+// 加载天地图层-电子地图
+        WebTiledLayer vecordBaseTiledLayer = TianDiTuMethodsClass.CreateTianDiTuTiledLayer(TianDiTuMethodsClass.LayerType.TIANDITU_VECTOR_MERCATOR);
+// 加载中文标注图层-电子地图
+        WebTiledLayer vecordWordTiledLayer = TianDiTuMethodsClass.CreateTianDiTuTiledLayer(TianDiTuMethodsClass.LayerType.TIANDITU_VECTOR_ANNOTATION_CHINESE_MERCATOR);
+
+        vecordBaseTiledLayer.setRequestConfiguration(requestConfiguration);
+        vecordWordTiledLayer.setRequestConfiguration(requestConfiguration);
+
+        vecordBaseTiledLayer.loadAsync();
+        vecordWordTiledLayer.loadAsync();
+
+        Basemap basemap = new Basemap();
+
+        basemap.getBaseLayers().add(vecordBaseTiledLayer);
+        basemap.getBaseLayers().add(vecordWordTiledLayer);
+
+        ArcGISMap arcGISMap = new ArcGISMap(basemap);
+        mapView.setMap(arcGISMap);
+        mapView.setOnTouchListener(new DefaultMapViewOnTouchListener(this,mapView) {
+            @Override
+            public boolean onRotate(MotionEvent motionEvent, double v) {
+                return false;
+            }
+        });
+        LocationDisplay locationDisplay = mapView.getLocationDisplay();
+        locationDisplay.setAutoPanMode(LocationDisplay.AutoPanMode.COMPASS_NAVIGATION);
+        locationDisplay.startAsync();
+
+    }
 }

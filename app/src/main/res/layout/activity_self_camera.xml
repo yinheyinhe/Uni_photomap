@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical">
 
     <RelativeLayout
@@ -17,16 +18,30 @@
             android:layout_height="match_parent" />
 
         <TextView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:layout_marginTop="40dp"
-            android:layout_marginLeft="40dp"
             android:id="@+id/location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="40dp"
             android:gravity="center"
-            android:textColor="#DC143C"
             android:text="hhh"
-            android:textSize="20sp"/>
+            android:textColor="#DC143C"
+            android:textSize="20sp" />
 
+
+        <com.esri.arcgisruntime.mapping.view.MapView
+            android:id="@+id/mapView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="250dp">
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:visibility="invisible"
+                />
+        </com.esri.arcgisruntime.mapping.view.MapView>
 
         <ImageView
             android:id="@+id/private_cf_frame_iv"

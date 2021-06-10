@@ -11,11 +11,7 @@ import android.location.Location;
 import android.location.LocationManager;
 import android.os.Build;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.MotionEvent;
-import android.view.View;
-import android.widget.Button;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -25,7 +21,6 @@ import androidx.core.content.ContextCompat;
 import com.esri.arcgisruntime.ArcGISRuntimeEnvironment;
 import com.esri.arcgisruntime.io.RequestConfiguration;
 import com.esri.arcgisruntime.layers.WebTiledLayer;
-import com.esri.arcgisruntime.location.LocationDataSource;
 import com.esri.arcgisruntime.mapping.ArcGISMap;
 import com.esri.arcgisruntime.mapping.Basemap;
 import com.esri.arcgisruntime.mapping.view.DefaultMapViewOnTouchListener;
@@ -82,7 +77,7 @@ public class MainActivity extends Activity {
 
         ArcGISMap arcGISMap = new ArcGISMap(basemap);
         mapView.setMap(arcGISMap);
-        this.mapView.setOnTouchListener(new DefaultMapViewOnTouchListener(this,mapView) {
+        mapView.setOnTouchListener(new DefaultMapViewOnTouchListener(this,mapView) {
             @Override
             public boolean onRotate(MotionEvent motionEvent, double v) {
                 return false;
