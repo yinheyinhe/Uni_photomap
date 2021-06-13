@@ -124,6 +124,7 @@ public class MainActivity extends Activity {
         point.add(place.toString());
         point.add(String.valueOf(location.getLatitude()));
         point.add(String.valueOf(location.getLongitude()));
+        point.add(SharedData.filepath);
         return point;
     }
     //回到当前位置

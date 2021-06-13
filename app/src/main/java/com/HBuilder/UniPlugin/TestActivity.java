@@ -184,6 +184,7 @@ public class TestActivity extends Activity {
         }
         String fileName = System.currentTimeMillis() + ".jpg";
         File file = new File(appDir, fileName);
+        SharedData.filepath = file.getAbsolutePath();
         try {
             FileOutputStream fos = new FileOutputStream(file);
             //通过io流的方式来压缩保存图片
