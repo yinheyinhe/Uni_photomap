@@ -88,45 +88,6 @@ public class MainActivity extends Activity {
         locationDisplay.startAsync();
 
     }
-    //获取当前位置的信息
-    private List<String> getLocation() throws IOException {
-        LocationManager locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
-        StringBuilder place = new StringBuilder();
-        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION)
-                != PackageManager.PERMISSION_GRANTED
-                && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION)
-                != PackageManager.PERMISSION_GRANTED) {
-            // TODO: Consider calling
-            //    ActivityCompat#requestPermissions
-            // here to request the missing permissions, and then overriding
-            //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
-            //                                          int[] grantResults)
-            // to handle the case where the user grants the permission. See the documentation
-            // for ActivityCompat#requestPermissions for more details.
-
-        }
-        Location location = locationManager.getLastKnownLocation(locationManager.NETWORK_PROVIDER);
-        List<Address> result = null;
-        Geocoder gc = new Geocoder(this, Locale.getDefault());
-        result = gc.getFromLocation(location.getLatitude(),
-                location.getLongitude(), 1);
-
-
-        if (result.size() > 0) {
-            Address address = result.get(0);
-            place.append(address.getLocality())
-                    .append(address.getSubLocality())
-                    .append(address.getFeatureName())
-                    .append("附近");
-        }
-
-        List<String> point = new ArrayList<>();
-        point.add(place.toString());
-        point.add(String.valueOf(location.getLatitude()));
-        point.add(String.valueOf(location.getLongitude()));
-        point.add(SharedData.filepath);
-        return point;
-    }
     //回到当前位置
     private void nowLocation() {
         locationDisplay = mapView.getLocationDisplay();

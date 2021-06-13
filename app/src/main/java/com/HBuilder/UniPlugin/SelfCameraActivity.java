@@ -1,8 +1,11 @@
 package com.HBuilder.UniPlugin;
 
+import android.Manifest;
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
+import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Matrix;
@@ -11,6 +14,10 @@ import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
+import android.location.Address;
+import android.location.Geocoder;
+import android.location.Location;
+import android.location.LocationManager;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
@@ -26,6 +33,7 @@ import android.view.Surface;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
 
 import com.esri.arcgisruntime.ArcGISRuntimeEnvironment;
 import com.esri.arcgisruntime.io.RequestConfiguration;
@@ -39,7 +47,9 @@ import com.esri.arcgisruntime.mapping.view.MapView;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 import java.util.Timer;
 import java.util.TimerTask;
 
@@ -271,6 +281,46 @@ public class SelfCameraActivity extends Activity implements View.OnClickListener
     private void mapback() {
         Intent intent = new Intent(getApplicationContext(),MainActivity.class);
         startActivity(intent);
+    }
+
+    //获取当前当前图片的所有信息
+    private List<String> getLocation() throws IOException {
+        LocationManager locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
+        StringBuilder place = new StringBuilder();
+        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION)
+                != PackageManager.PERMISSION_GRANTED
+                && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION)
+                != PackageManager.PERMISSION_GRANTED) {
+            // TODO: Consider calling
+            //    ActivityCompat#requestPermissions
+            // here to request the missing permissions, and then overriding
+            //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
+            //                                          int[] grantResults)
+            // to handle the case where the user grants the permission. See the documentation
+            // for ActivityCompat#requestPermissions for more details.
+
+        }
+        Location location = locationManager.getLastKnownLocation(locationManager.NETWORK_PROVIDER);
+        List<Address> result = null;
+        Geocoder gc = new Geocoder(this, Locale.getDefault());
+        result = gc.getFromLocation(location.getLatitude(),
+                location.getLongitude(), 1);
+
+
+        if (result.size() > 0) {
+            Address address = result.get(0);
+            place.append(address.getLocality())
+                    .append(address.getSubLocality())
+                    .append(address.getFeatureName())
+                    .append("附近");
+        }
+
+        List<String> point = new ArrayList<>();
+        point.add(place.toString()); //位置
+        point.add(String.valueOf(location.getLatitude())); //纬度
+        point.add(String.valueOf(location.getLongitude())); //经度
+        point.add(SharedData.filepath);  //图片存储路径
+        return point;
     }
 
     //加载地图定位
