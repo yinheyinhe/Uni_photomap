@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <string msgid="5976598919945601918" name="abc_action_bar_home_description">"Przejdź na stronę główną"</string>
+    <string msgid="8388173803310557296" name="abc_action_bar_up_description">"Przejdź wyżej"</string>
+    <string msgid="3937310113216875497" name="abc_action_menu_overflow_description">"Więcej opcji"</string>
+    <string msgid="4692188335987374352" name="abc_action_mode_done">"Gotowe"</string>
+    <string msgid="1189761859438369441" name="abc_activity_chooser_view_see_all">"Pokaż wszystko"</string>
+    <string msgid="2165779757652331008" name="abc_activitychooserview_choose_application">"Wybierz aplikację"</string>
+    <string msgid="4215997306490295099" name="abc_capital_off">"WYŁ."</string>
+    <string msgid="884982626291842264" name="abc_capital_on">"WŁ."</string>
+    <string msgid="8833365367933412986" name="abc_menu_alt_shortcut_label">"Alt+"</string>
+    <string msgid="2223301931652355242" name="abc_menu_ctrl_shortcut_label">"Ctrl+"</string>
+    <string msgid="838001238306846836" name="abc_menu_delete_shortcut_label">"Delete"</string>
+    <string msgid="7986526966204849475" name="abc_menu_enter_shortcut_label">"Enter"</string>
+    <string msgid="375214403600139847" name="abc_menu_function_shortcut_label">"Funkcyjny+"</string>
+    <string msgid="4192209724446364286" name="abc_menu_meta_shortcut_label">"Meta+"</string>
+    <string msgid="4741552369836443843" name="abc_menu_shift_shortcut_label">"Shift+"</string>
+    <string msgid="5473865519181928982" name="abc_menu_space_shortcut_label">"spacja"</string>
+    <string msgid="6180552449598693998" name="abc_menu_sym_shortcut_label">"Sym+"</string>
+    <string msgid="5520303668377388990" name="abc_prepend_shortcut_label">"Menu+"</string>
+    <string msgid="7208076849092622260" name="abc_search_hint">"Szukaj…"</string>
+    <string msgid="3741173234950517107" name="abc_searchview_description_clear">"Wyczyść zapytanie"</string>
+    <string msgid="693312494995508443" name="abc_searchview_description_query">"Zapytanie"</string>
+    <string msgid="3417662926640357176" name="abc_searchview_description_search">"Szukaj"</string>
+    <string msgid="1486535517437947103" name="abc_searchview_description_submit">"Wyślij zapytanie"</string>
+    <string msgid="2293578557972875415" name="abc_searchview_description_voice">"Wyszukiwanie głosowe"</string>
+    <string msgid="8875138169939072951" name="abc_shareactionprovider_share_with">"Udostępnij przez:"</string>
+    <string msgid="9055268688411532828" name="abc_shareactionprovider_share_with_application">"Udostępnij przez: <ns1:g id="APPLICATION_NAME">%s</ns1:g>"</string>
+    <string msgid="1656852541809559762" name="abc_toolbar_collapse_description">"Zwiń"</string>
+    <string name="arcgisruntime_client_cert_dialog_button_positive">Kontynuuj</string>
+    <string name="arcgisruntime_client_cert_dialog_message">Usługa zażądała certyfikatu klienta w celu uwierzytelnienia użytkownika, co wymaga użycia bezpiecznego ekranu blokady. Zamknięcie tego okna dialogowego spowoduje otwarcie okna dialogowego systemu Android, w którym można będzie anulować lub zmienić typ zabezpieczeń, co z kolei pozwoli na podanie certyfikatu.</string>
+    <string name="arcgisruntime_client_cert_dialog_title">Zażądano certyfikatu klienta</string>
+    <string name="arcgisruntime_created_by">Utworzone przez %1$s</string>
+    <string name="arcgisruntime_created_by_day">Utworzone przez %1$s w dniu %2$s o %3$s</string>
+    <string name="arcgisruntime_created_by_full">Utworzone przez %1$s w dniu %2$s o %3$s</string>
+    <string name="arcgisruntime_created_by_hour">Utworzone przez %1$s godzinę temu</string>
+    <string name="arcgisruntime_created_by_hours">Utworzone przez %1$s %2$d godz. temu</string>
+    <string name="arcgisruntime_created_by_minute">Utworzone przez %1$s minutę temu</string>
+    <string name="arcgisruntime_created_by_minutes">Utworzone przez %1$s %2$d min temu</string>
+    <string name="arcgisruntime_created_by_seconds">Utworzone przez %1$s kilka sekund temu</string>
+    <string name="arcgisruntime_created_day">Utworzono w dniu %1$s o %2$s</string>
+    <string name="arcgisruntime_created_full">Utworzono w dniu %1$s o %2$s</string>
+    <string name="arcgisruntime_created_hour">Utworzono godzinę temu</string>
+    <string name="arcgisruntime_created_hours">Utworzone %1$d godz. temu</string>
+    <string name="arcgisruntime_created_minute">Utworzono minutę temu</string>
+    <string name="arcgisruntime_created_minutes">Utworzony %1$d min temu</string>
+    <string name="arcgisruntime_created_seconds">Utworzono kilka sekund temu</string>
+    <string name="arcgisruntime_edited_by">Modyfikacja wykonana przez %1$s</string>
+    <string name="arcgisruntime_edited_by_day">Modyfikacja wykonana przez %1$s w dniu %2$s o %3$s</string>
+    <string name="arcgisruntime_edited_by_full">Modyfikacja wykonana przez %1$s w dniu %2$s o %3$s</string>
+    <string name="arcgisruntime_edited_by_hour">Modyfikacja wykonana przez %1$s godzinę temu</string>
+    <string name="arcgisruntime_edited_by_hours">Modyfikacja wykonana przez %1$s %2$d godz. temu</string>
+    <string name="arcgisruntime_edited_by_minute">Modyfikacja wykonana przez %1$s minutę temu</string>
+    <string name="arcgisruntime_edited_by_minutes">Modyfikacja wykonana przez %1$s %2$d min temu</string>
+    <string name="arcgisruntime_edited_by_seconds">Modyfikacja wykonana przez %1$s kilka sekund temu</string>
+    <string name="arcgisruntime_edited_day">Zmodyfikowano w dniu %1$s o %2$s</string>
+    <string name="arcgisruntime_edited_full">Zmodyfikowano w dniu %1$s o %2$s</string>
+    <string name="arcgisruntime_edited_hour">Zmodyfikowano godzinę temu</string>
+    <string name="arcgisruntime_edited_hours">Zmodyfikowano %1$d godz. temu</string>
+    <string name="arcgisruntime_edited_minute">Zmodyfikowano minutę temu</string>
+    <string name="arcgisruntime_edited_minutes">Zmodyfikowano %1$d min temu</string>
+    <string name="arcgisruntime_edited_seconds">Zmodyfikowano kilka sekund temu</string>
+    <string name="arcgisruntime_error_field_must_be_numeric">"Pole liczbowe musi mieć wartość liczbową"</string>
+    <string name="arcgisruntime_error_invalid_geoelement">"Nieprawidłowa klasa GeoElement"</string>
+    <string name="arcgisruntime_error_max_field_length">Wartość przekracza maksymalną długość pola: %1$d</string>
+    <string name="arcgisruntime_error_null_value_not_allowed">"Wartość Null nie jest dozwolona w polu o nazwie `%1$s`"</string>
+    <string name="arcgisruntime_error_out_of_range">"Wartość nie należy do prawidłowego zakresu od %1$s do %2$s"</string>
+    <string name="arcgisruntime_http_auth_request_dialog_button_negative">Anuluj</string>
+    <string name="arcgisruntime_http_auth_request_dialog_button_positive">Zaloguj się</string>
+    <string name="arcgisruntime_http_auth_request_dialog_invalid_credential">Nieprawidłowa nazwa użytkownika lub hasło.</string>
+    <string name="arcgisruntime_http_auth_request_dialog_password_hint">pobieranie ukończone</string>
+    <string name="arcgisruntime_http_auth_request_dialog_title">Wymagane uwierzytelnienie</string>
+    <string name="arcgisruntime_http_auth_request_dialog_username_hint">Ukończono pobieranie</string>
+    <string name="arcgisruntime_na_CurrentLanguage">pl</string>
+    <string name="arcgisruntime_range_domain_string">Od %1$s do %2$s</string>
+    <string name="arcgisruntime_self_signed_dialog_button_negative">Blok</string>
+    <string name="arcgisruntime_self_signed_dialog_button_positive">Zaufanie</string>
+    <string name="arcgisruntime_self_signed_dialog_mismatched_host">Ten serwer nie mógł potwierdzić swojej tożsamości. Jego certyfikat zabezpieczeń pochodzi z innej domeny. Ta sytuacja mogła zostać spowodowana błędną konfiguracją lub atakiem przechwytującym Twoje połączenie. Czy kontynuować mimo to?</string>
+    <string name="arcgisruntime_self_signed_dialog_mismatched_title">Niezgodna nazwa hosta</string>
+    <string name="arcgisruntime_self_signed_dialog_remember">Pamiętasz?</string>
+    <string name="arcgisruntime_self_signed_dialog_untrusted_host">Ten serwer nie mógł potwierdzić swojej tożsamości. System operacyjny nie ma zaufania do jego certyfikatu zabezpieczeń. Czy kontynuować mimo to?</string>
+    <string name="arcgisruntime_self_signed_dialog_untrusted_title">Niezaufany host</string>
+    <string name="arcgisruntime_sketcheditor_callout_clear">Wyczyść</string>
+    <string name="arcgisruntime_sketcheditor_callout_remove_vertex">Usuń wierzchołek</string>
+    <string msgid="6264217191555673260" name="search_menu_title">"Szukaj"</string>
+    <string msgid="6277540029070332960" name="status_bar_notification_info_overflow">"999+"</string>
+</resources>

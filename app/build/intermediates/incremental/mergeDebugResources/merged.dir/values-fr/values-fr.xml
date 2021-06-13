@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <string msgid="5976598919945601918" name="abc_action_bar_home_description">"Revenir à l\'accueil"</string>
+    <string msgid="8388173803310557296" name="abc_action_bar_up_description">"Revenir en haut de la page"</string>
+    <string msgid="3937310113216875497" name="abc_action_menu_overflow_description">"Autres options"</string>
+    <string msgid="4692188335987374352" name="abc_action_mode_done">"OK"</string>
+    <string msgid="1189761859438369441" name="abc_activity_chooser_view_see_all">"Tout afficher"</string>
+    <string msgid="2165779757652331008" name="abc_activitychooserview_choose_application">"Sélectionner une application"</string>
+    <string msgid="4215997306490295099" name="abc_capital_off">"NON"</string>
+    <string msgid="884982626291842264" name="abc_capital_on">"OUI"</string>
+    <string msgid="8833365367933412986" name="abc_menu_alt_shortcut_label">"Alt+"</string>
+    <string msgid="2223301931652355242" name="abc_menu_ctrl_shortcut_label">"Ctrl+"</string>
+    <string msgid="838001238306846836" name="abc_menu_delete_shortcut_label">"supprimer"</string>
+    <string msgid="7986526966204849475" name="abc_menu_enter_shortcut_label">"entrée"</string>
+    <string msgid="375214403600139847" name="abc_menu_function_shortcut_label">"Fonction+"</string>
+    <string msgid="4192209724446364286" name="abc_menu_meta_shortcut_label">"Méta+"</string>
+    <string msgid="4741552369836443843" name="abc_menu_shift_shortcut_label">"Maj+"</string>
+    <string msgid="5473865519181928982" name="abc_menu_space_shortcut_label">"espace"</string>
+    <string msgid="6180552449598693998" name="abc_menu_sym_shortcut_label">"Sym+"</string>
+    <string msgid="5520303668377388990" name="abc_prepend_shortcut_label">"Menu+"</string>
+    <string msgid="7208076849092622260" name="abc_search_hint">"Rechercher…"</string>
+    <string msgid="3741173234950517107" name="abc_searchview_description_clear">"Effacer la requête"</string>
+    <string msgid="693312494995508443" name="abc_searchview_description_query">"Requête de recherche"</string>
+    <string msgid="3417662926640357176" name="abc_searchview_description_search">"Rechercher"</string>
+    <string msgid="1486535517437947103" name="abc_searchview_description_submit">"Envoyer la requête"</string>
+    <string msgid="2293578557972875415" name="abc_searchview_description_voice">"Recherche vocale"</string>
+    <string msgid="8875138169939072951" name="abc_shareactionprovider_share_with">"Partager avec"</string>
+    <string msgid="9055268688411532828" name="abc_shareactionprovider_share_with_application">"Partager avec <ns1:g id="APPLICATION_NAME">%s</ns1:g>"</string>
+    <string msgid="1656852541809559762" name="abc_toolbar_collapse_description">"Réduire"</string>
+    <string name="arcgisruntime_client_cert_dialog_button_positive">Poursuivre</string>
+    <string name="arcgisruntime_client_cert_dialog_message">Le service a demandé un certificat de client pour vous authentifier, ce qui nécessite également un écran de verrouillage sécurisé. Si vous fermez cette boîte de dialogue, une fenêtre Android dans laquelle vous pouvez annuler ou modifier votre type de sécurité (ce qui permet de spécifier un certificat) apparaît.</string>
+    <string name="arcgisruntime_client_cert_dialog_title">Certificat de client demandé</string>
+    <string name="arcgisruntime_created_by">Créé par %1$s</string>
+    <string name="arcgisruntime_created_by_day">Créé par %1$s le %2$s à %3$s</string>
+    <string name="arcgisruntime_created_by_full">Créé par %1$s le %2$s à %3$s</string>
+    <string name="arcgisruntime_created_by_hour">Créé par %1$s il y a une heure</string>
+    <string name="arcgisruntime_created_by_hours">Créé par %1$s il y a %2$d heures</string>
+    <string name="arcgisruntime_created_by_minute">Créé par %1$s il y a une minute</string>
+    <string name="arcgisruntime_created_by_minutes">Créé par %1$s %2$d il y a quelques minutes</string>
+    <string name="arcgisruntime_created_by_seconds">Créé par %1$s il y a quelques secondes</string>
+    <string name="arcgisruntime_created_day">Créé le %1$s à %2$s</string>
+    <string name="arcgisruntime_created_full">Créé le %1$s à %2$s</string>
+    <string name="arcgisruntime_created_hour">Créé il y a une heure</string>
+    <string name="arcgisruntime_created_hours">Créé il y a %1$d heures</string>
+    <string name="arcgisruntime_created_minute">Créé il y a une minute</string>
+    <string name="arcgisruntime_created_minutes">Créé il y a %1$d minutes</string>
+    <string name="arcgisruntime_created_seconds">Créé il y a quelques secondes</string>
+    <string name="arcgisruntime_edited_by">Modifié par %1$s</string>
+    <string name="arcgisruntime_edited_by_day">Modifié par %1$s le %2$s à %3$s</string>
+    <string name="arcgisruntime_edited_by_full">Modifié par %1$s le %2$s à %3$s</string>
+    <string name="arcgisruntime_edited_by_hour">Modifié par %1$s il y a une heure</string>
+    <string name="arcgisruntime_edited_by_hours">Modifié par %1$s il y a %2$d heures</string>
+    <string name="arcgisruntime_edited_by_minute">Modifié par %1$s il y a une minute</string>
+    <string name="arcgisruntime_edited_by_minutes">Modifié par %1$s il y a %2$d minutes</string>
+    <string name="arcgisruntime_edited_by_seconds">Modifié par %1$s il y a quelques secondes</string>
+    <string name="arcgisruntime_edited_day">Modifié le %1$s à %2$s</string>
+    <string name="arcgisruntime_edited_full">Modifié le %1$s à %2$s</string>
+    <string name="arcgisruntime_edited_hour">Modifié il y a une heure</string>
+    <string name="arcgisruntime_edited_hours">Modifié il y a %1$d heures</string>
+    <string name="arcgisruntime_edited_minute">Modifié il y a une minute</string>
+    <string name="arcgisruntime_edited_minutes">Modifié il y a %1$d minutes</string>
+    <string name="arcgisruntime_edited_seconds">Modifié il y a quelques secondes</string>
+    <string name="arcgisruntime_error_field_must_be_numeric">"Le champ numérique doit avoir une valeur numérique"</string>
+    <string name="arcgisruntime_error_invalid_geoelement">"GeoElement non valide"</string>
+    <string name="arcgisruntime_error_max_field_length">La valeur excède la longueur maximale de champ %1$d</string>
+    <string name="arcgisruntime_error_null_value_not_allowed">"La valeur Null n\'est pas autorisée pour le champ `%1$s`"</string>
+    <string name="arcgisruntime_error_out_of_range">"La valeur se trouve en dehors de la plage de valeurs valide de %1$s à %2$s"</string>
+    <string name="arcgisruntime_http_auth_request_dialog_button_negative">Annuler</string>
+    <string name="arcgisruntime_http_auth_request_dialog_button_positive">Se connecter</string>
+    <string name="arcgisruntime_http_auth_request_dialog_invalid_credential">Nom d’utilisateur ou mot de passe non valide.</string>
+    <string name="arcgisruntime_http_auth_request_dialog_password_hint">Mot de passe</string>
+    <string name="arcgisruntime_http_auth_request_dialog_title">Authentification requise</string>
+    <string name="arcgisruntime_http_auth_request_dialog_username_hint">Nom d\'utilisateur</string>
+    <string name="arcgisruntime_na_CurrentLanguage">fr</string>
+    <string name="arcgisruntime_range_domain_string">%1$s à %2$s</string>
+    <string name="arcgisruntime_self_signed_dialog_button_negative">Ilot</string>
+    <string name="arcgisruntime_self_signed_dialog_button_positive">Trust</string>
+    <string name="arcgisruntime_self_signed_dialog_mismatched_host">Ce serveur n\'a pas pu être vérifié, son certificat de sécurité provient d\'un autre domaine. Cette situation peut être provoquée par une configuration incorrecte ou une personne a peut-être intercepté votre connexion. Voulez-vous continuer ?</string>
+    <string name="arcgisruntime_self_signed_dialog_mismatched_title">Nom d\'hôte incompatible</string>
+    <string name="arcgisruntime_self_signed_dialog_remember">Mémoriser ?</string>
+    <string name="arcgisruntime_self_signed_dialog_untrusted_host">Ce serveur n\'a pas pu être vérifié, son certificat de sécurité n\'est pas approuvé par votre système d\'exploitation. Voulez-vous continuer ?</string>
+    <string name="arcgisruntime_self_signed_dialog_untrusted_title">Hôte non approuvé</string>
+    <string name="arcgisruntime_sketcheditor_callout_clear">Effacer</string>
+    <string name="arcgisruntime_sketcheditor_callout_remove_vertex">Supprimer le sommet</string>
+    <string msgid="6264217191555673260" name="search_menu_title">"Rechercher"</string>
+    <string msgid="6277540029070332960" name="status_bar_notification_info_overflow">"999+"</string>
+</resources>

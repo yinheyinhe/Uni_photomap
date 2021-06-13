@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <string msgid="5976598919945601918" name="abc_action_bar_home_description">"Find hjem"</string>
+    <string msgid="8388173803310557296" name="abc_action_bar_up_description">"Gå op"</string>
+    <string msgid="3937310113216875497" name="abc_action_menu_overflow_description">"Flere valgmuligheder"</string>
+    <string msgid="4692188335987374352" name="abc_action_mode_done">"Udfør"</string>
+    <string msgid="1189761859438369441" name="abc_activity_chooser_view_see_all">"Se alle"</string>
+    <string msgid="2165779757652331008" name="abc_activitychooserview_choose_application">"Vælg en app"</string>
+    <string msgid="4215997306490295099" name="abc_capital_off">"FRA"</string>
+    <string msgid="884982626291842264" name="abc_capital_on">"TIL"</string>
+    <string msgid="8833365367933412986" name="abc_menu_alt_shortcut_label">"Alt+"</string>
+    <string msgid="2223301931652355242" name="abc_menu_ctrl_shortcut_label">"Ctrl+"</string>
+    <string msgid="838001238306846836" name="abc_menu_delete_shortcut_label">"slet"</string>
+    <string msgid="7986526966204849475" name="abc_menu_enter_shortcut_label">"enter"</string>
+    <string msgid="375214403600139847" name="abc_menu_function_shortcut_label">"Fn+"</string>
+    <string msgid="4192209724446364286" name="abc_menu_meta_shortcut_label">"Meta+"</string>
+    <string msgid="4741552369836443843" name="abc_menu_shift_shortcut_label">"Shift+"</string>
+    <string msgid="5473865519181928982" name="abc_menu_space_shortcut_label">"mellemrum"</string>
+    <string msgid="6180552449598693998" name="abc_menu_sym_shortcut_label">"Sym+"</string>
+    <string msgid="5520303668377388990" name="abc_prepend_shortcut_label">"Menu+"</string>
+    <string msgid="7208076849092622260" name="abc_search_hint">"Søg…"</string>
+    <string msgid="3741173234950517107" name="abc_searchview_description_clear">"Ryd forespørgsel"</string>
+    <string msgid="693312494995508443" name="abc_searchview_description_query">"Søgeforespørgsel"</string>
+    <string msgid="3417662926640357176" name="abc_searchview_description_search">"Søg"</string>
+    <string msgid="1486535517437947103" name="abc_searchview_description_submit">"Indsend forespørgsel"</string>
+    <string msgid="2293578557972875415" name="abc_searchview_description_voice">"Talesøgning"</string>
+    <string msgid="8875138169939072951" name="abc_shareactionprovider_share_with">"Del med"</string>
+    <string msgid="9055268688411532828" name="abc_shareactionprovider_share_with_application">"Del med <ns1:g id="APPLICATION_NAME">%s</ns1:g>"</string>
+    <string msgid="1656852541809559762" name="abc_toolbar_collapse_description">"Skjul"</string>
+    <string name="arcgisruntime_client_cert_dialog_button_positive">Fortsæt</string>
+    <string name="arcgisruntime_client_cert_dialog_message">Tjenesten har anmodet om et klientcertifikat for at godkende dig, hvilket desuden kræver en sikker låseskærm. Når du lukker denne dialogboks, åbnes en Android-dialogboks, hvor du enten kan annullere eller ændre din sikkerhedstype, hvilket vil gøre det muligt for dig at specificere et certifikat.</string>
+    <string name="arcgisruntime_client_cert_dialog_title">Der er anmodet om klientcertifikat</string>
+    <string name="arcgisruntime_created_by">Oprettet af %1$s</string>
+    <string name="arcgisruntime_created_by_day">Oprettet af %1$s d. %2$s kl. %3$s</string>
+    <string name="arcgisruntime_created_by_full">Oprettet af %1$s d. %2$s kl. %3$s</string>
+    <string name="arcgisruntime_created_by_hour">Oprettet af %1$s for en time siden</string>
+    <string name="arcgisruntime_created_by_hours">Oprettet af %1$s for %2$d timer siden</string>
+    <string name="arcgisruntime_created_by_minute">Oprettet af %1$s ét minut siden</string>
+    <string name="arcgisruntime_created_by_minutes">Oprettet af %1$s for %2$d minutter siden</string>
+    <string name="arcgisruntime_created_by_seconds">Oprettet af %1$s sekunder siden</string>
+    <string name="arcgisruntime_created_day">Oprettet d. %1$s kl. %2$s</string>
+    <string name="arcgisruntime_created_full">Oprettet d. %1$s kl. %2$s</string>
+    <string name="arcgisruntime_created_hour">Oprettet for en time siden</string>
+    <string name="arcgisruntime_created_hours">Oprettet for %1$d timer siden</string>
+    <string name="arcgisruntime_created_minute">Oprettet for et minut siden</string>
+    <string name="arcgisruntime_created_minutes">Oprettet for %1$d minutter siden</string>
+    <string name="arcgisruntime_created_seconds">Oprettet for sekunder siden</string>
+    <string name="arcgisruntime_edited_by">Redigeret af %1$s</string>
+    <string name="arcgisruntime_edited_by_day">Redigeret af %1$s d. %2$s kl. %3$s</string>
+    <string name="arcgisruntime_edited_by_full">Redigeret af %1$s d. %2$s kl. %3$s</string>
+    <string name="arcgisruntime_edited_by_hour">Redigeret af %1$s for en time siden</string>
+    <string name="arcgisruntime_edited_by_hours">Redigeret af %1$s for %2$d timer siden</string>
+    <string name="arcgisruntime_edited_by_minute">Redigeret af %1$s ét minut siden</string>
+    <string name="arcgisruntime_edited_by_minutes">Redigeret af %1$s for %2$d minutter siden</string>
+    <string name="arcgisruntime_edited_by_seconds">Redigeret af %1$s sekunder siden</string>
+    <string name="arcgisruntime_edited_day">Redigeret d. %1$s kl. %2$s</string>
+    <string name="arcgisruntime_edited_full">Redigeret d. %1$s kl. %2$s</string>
+    <string name="arcgisruntime_edited_hour">Redigeret for en time siden</string>
+    <string name="arcgisruntime_edited_hours">Redigeret for %1$d timer siden</string>
+    <string name="arcgisruntime_edited_minute">Redigeret for et minut siden</string>
+    <string name="arcgisruntime_edited_minutes">Redigeret for %1$d minutter siden</string>
+    <string name="arcgisruntime_edited_seconds">Redigeret for sekunder siden</string>
+    <string name="arcgisruntime_error_field_must_be_numeric">"Numerisk felt skal indeholde en numerisk værdi"</string>
+    <string name="arcgisruntime_error_invalid_geoelement">"Ugyldigt GeoElement"</string>
+    <string name="arcgisruntime_error_max_field_length">Værdi overskrider den maksimale feltlængde på %1$d</string>
+    <string name="arcgisruntime_error_null_value_not_allowed">"Nul-værdi er ikke tilladt for feltet med navnet `%1$s`"</string>
+    <string name="arcgisruntime_error_out_of_range">"Værdi ligger uden for det gyldige interval fra %1$s til %2$s"</string>
+    <string name="arcgisruntime_http_auth_request_dialog_button_negative">Annullér</string>
+    <string name="arcgisruntime_http_auth_request_dialog_button_positive">Log ind</string>
+    <string name="arcgisruntime_http_auth_request_dialog_invalid_credential">Ugyldigt brugernavn eller adgangskode.</string>
+    <string name="arcgisruntime_http_auth_request_dialog_password_hint">Adgangskode</string>
+    <string name="arcgisruntime_http_auth_request_dialog_title">Authentication Required</string>
+    <string name="arcgisruntime_http_auth_request_dialog_username_hint">Brugernavn</string>
+    <string name="arcgisruntime_na_CurrentLanguage">da</string>
+    <string name="arcgisruntime_range_domain_string">%1$s til %2$s</string>
+    <string name="arcgisruntime_self_signed_dialog_button_negative">Blok</string>
+    <string name="arcgisruntime_self_signed_dialog_button_positive">Trust</string>
+    <string name="arcgisruntime_self_signed_dialog_mismatched_host">Denne server kunne ikke godkendes. Dens sikkerhedscertifikat stammer fra et andet domæne. Dette kan skyldes en forkert konfiguration, eller at din forbindelse har været udsat for et cyberangreb. Vil du fortsætte alligevel?</string>
+    <string name="arcgisruntime_self_signed_dialog_mismatched_title">Uoverensstemmende værtsnavn</string>
+    <string name="arcgisruntime_self_signed_dialog_remember">Husk?</string>
+    <string name="arcgisruntime_self_signed_dialog_untrusted_host">Denne server kunne ikke godkendes. Dit operativsystem anser ikke dens sikkerhedscertifikat for at være pålideligt. Vil du fortsætte alligevel?</string>
+    <string name="arcgisruntime_self_signed_dialog_untrusted_title">Upålidelig vært</string>
+    <string name="arcgisruntime_sketcheditor_callout_clear">Ryd</string>
+    <string name="arcgisruntime_sketcheditor_callout_remove_vertex">Fjern koordinatpunkt</string>
+    <string msgid="6264217191555673260" name="search_menu_title">"Søg"</string>
+    <string msgid="6277540029070332960" name="status_bar_notification_info_overflow">"999+"</string>
+</resources>

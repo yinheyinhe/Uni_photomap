@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <string msgid="5976598919945601918" name="abc_action_bar_home_description">"ניווט לדף הבית"</string>
+    <string msgid="8388173803310557296" name="abc_action_bar_up_description">"ניווט למעלה"</string>
+    <string msgid="3937310113216875497" name="abc_action_menu_overflow_description">"עוד אפשרויות"</string>
+    <string msgid="4692188335987374352" name="abc_action_mode_done">"סיום"</string>
+    <string msgid="1189761859438369441" name="abc_activity_chooser_view_see_all">"הצגת הכול"</string>
+    <string msgid="2165779757652331008" name="abc_activitychooserview_choose_application">"בחירת אפליקציה"</string>
+    <string msgid="4215997306490295099" name="abc_capital_off">"כבוי"</string>
+    <string msgid="884982626291842264" name="abc_capital_on">"מופעל"</string>
+    <string msgid="8833365367933412986" name="abc_menu_alt_shortcut_label">"Alt+"</string>
+    <string msgid="2223301931652355242" name="abc_menu_ctrl_shortcut_label">"Ctrl+‎"</string>
+    <string msgid="838001238306846836" name="abc_menu_delete_shortcut_label">"מחיקה"</string>
+    <string msgid="7986526966204849475" name="abc_menu_enter_shortcut_label">"Enter"</string>
+    <string msgid="375214403600139847" name="abc_menu_function_shortcut_label">"Function+"</string>
+    <string msgid="4192209724446364286" name="abc_menu_meta_shortcut_label">"Meta+"</string>
+    <string msgid="4741552369836443843" name="abc_menu_shift_shortcut_label">"Shift+"</string>
+    <string msgid="5473865519181928982" name="abc_menu_space_shortcut_label">"רווח"</string>
+    <string msgid="6180552449598693998" name="abc_menu_sym_shortcut_label">"Sym+"</string>
+    <string msgid="5520303668377388990" name="abc_prepend_shortcut_label">"תפריט+"</string>
+    <string msgid="7208076849092622260" name="abc_search_hint">"חיפוש…"</string>
+    <string msgid="3741173234950517107" name="abc_searchview_description_clear">"מחיקת השאילתה"</string>
+    <string msgid="693312494995508443" name="abc_searchview_description_query">"שאילתת חיפוש"</string>
+    <string msgid="3417662926640357176" name="abc_searchview_description_search">"חיפוש"</string>
+    <string msgid="1486535517437947103" name="abc_searchview_description_submit">"שליחת שאילתה"</string>
+    <string msgid="2293578557972875415" name="abc_searchview_description_voice">"חיפוש קולי"</string>
+    <string msgid="8875138169939072951" name="abc_shareactionprovider_share_with">"שיתוף עם"</string>
+    <string msgid="9055268688411532828" name="abc_shareactionprovider_share_with_application">"שיתוף עם <ns1:g id="APPLICATION_NAME">%s</ns1:g>"</string>
+    <string msgid="1656852541809559762" name="abc_toolbar_collapse_description">"כיווץ"</string>
+    <string name="arcgisruntime_client_cert_dialog_button_positive">המשך</string>
+    <string name="arcgisruntime_client_cert_dialog_message">השירות ביקש אישור לקוח כדי לאמת את הזהות שלך. לשם כך יש צורך במסך נעילה מאובטח. סגירת תיבת הדו-שיח הזו תפתח תיבת דו-שיח של Android שבה תוכל לבטל או לשנות את סוג האבטחה. שינוי זה יאפשר לך לספק אישור.</string>
+    <string name="arcgisruntime_client_cert_dialog_title">התבקש אישור לקוח</string>
+    <string name="arcgisruntime_created_by">נוצר על ידי %1$s</string>
+    <string name="arcgisruntime_created_by_day">נוצר על ידי %1$s ב-%2$s ב-%3$s</string>
+    <string name="arcgisruntime_created_by_full">נוצר על ידי %1$s ב-%2$s ב-%3$s</string>
+    <string name="arcgisruntime_created_by_hour">נוצר על ידי %1$s לפני כשעה</string>
+    <string name="arcgisruntime_created_by_hours">נוצר על ידי %1$s לפני %2$d שעות</string>
+    <string name="arcgisruntime_created_by_minute">נוצר על ידי %1$s לפני דקה</string>
+    <string name="arcgisruntime_created_by_minutes">נוצר על ידי %1$s לפני %2$d דקות</string>
+    <string name="arcgisruntime_created_by_seconds">נוצר על ידי %1$s לפני מספר שניות</string>
+    <string name="arcgisruntime_created_day">נוצר ב-%1$s ב-%2$s</string>
+    <string name="arcgisruntime_created_full">נוצר ב-%1$s ב-%2$s</string>
+    <string name="arcgisruntime_created_hour">נוצר לפני שנה</string>
+    <string name="arcgisruntime_created_hours">נוצר  לפני %1$d שעות</string>
+    <string name="arcgisruntime_created_minute">נוצר לפני דקה אחת</string>
+    <string name="arcgisruntime_created_minutes">נוצר  לפני %1$d דקות</string>
+    <string name="arcgisruntime_created_seconds">נוצר לפני מספר שניות</string>
+    <string name="arcgisruntime_edited_by">נערך על ידי %1$s</string>
+    <string name="arcgisruntime_edited_by_day">נערך על ידי %1$s ב-%2$s ב-%3$s</string>
+    <string name="arcgisruntime_edited_by_full">נערך על ידי %1$s ב-%2$s ב-%3$s</string>
+    <string name="arcgisruntime_edited_by_hour">נערך על ידי %1$s לפני כשעה</string>
+    <string name="arcgisruntime_edited_by_hours">נערך על ידי %1$s לפני %2$d שעות</string>
+    <string name="arcgisruntime_edited_by_minute">נערך על ידי %1$s לפני דקה</string>
+    <string name="arcgisruntime_edited_by_minutes">נערך על ידי %1$s לפני %2$d דקות</string>
+    <string name="arcgisruntime_edited_by_seconds">נערך על ידי %1$s לפני מספר שניות</string>
+    <string name="arcgisruntime_edited_day">נערך ב-%1$s ב-%2$s</string>
+    <string name="arcgisruntime_edited_full">נערך ב-%1$s ב-%2$s</string>
+    <string name="arcgisruntime_edited_hour">נערך לפני שעה</string>
+    <string name="arcgisruntime_edited_hours">נערך לפני %1$d שעות</string>
+    <string name="arcgisruntime_edited_minute">נערך לפני דקה</string>
+    <string name="arcgisruntime_edited_minutes">נערך לפני %1$d דקות</string>
+    <string name="arcgisruntime_edited_seconds">נערך לפני מספר שניות</string>
+    <string name="arcgisruntime_error_field_must_be_numeric">‎"‎שדה מספרי חייב להכיל ערך מספרי‎"‎</string>
+    <string name="arcgisruntime_error_invalid_geoelement">‎"‎רכיב GeoElement לא חוקי‎"‎</string>
+    <string name="arcgisruntime_error_max_field_length">הערך חורג מאורך השדה המקסימלי של %1$d</string>
+    <string name="arcgisruntime_error_null_value_not_allowed">"ערך Null אינו מותר עבור שדה בשם `%1$s`"</string>
+    <string name="arcgisruntime_error_out_of_range">"הערך חורג מהטווח החוקי של %1$s עד %2$s"</string>
+    <string name="arcgisruntime_http_auth_request_dialog_button_negative">בטל</string>
+    <string name="arcgisruntime_http_auth_request_dialog_button_positive">התחבר</string>
+    <string name="arcgisruntime_http_auth_request_dialog_invalid_credential">שם משתמש או סיסמה שגויים</string>
+    <string name="arcgisruntime_http_auth_request_dialog_password_hint">סיסמה</string>
+    <string name="arcgisruntime_http_auth_request_dialog_title">נדרש אימות</string>
+    <string name="arcgisruntime_http_auth_request_dialog_username_hint">שם משתמש</string>
+    <string name="arcgisruntime_na_CurrentLanguage">he</string>
+    <string name="arcgisruntime_range_domain_string">%1$s ל-%2$s</string>
+    <string name="arcgisruntime_self_signed_dialog_button_negative">בלוק</string>
+    <string name="arcgisruntime_self_signed_dialog_button_positive">Trust</string>
+    <string name="arcgisruntime_self_signed_dialog_mismatched_host">השרת הזה לא הצליח להוכיח את זהותו. אישור האבטחה שלו הוא מדומיין אחר. ייתכן שהסיבה לכך היא תצורה שגויה או תוקף המיירט את החיבור שלך. האם ברצונך להמשיך בכל זאת?</string>
+    <string name="arcgisruntime_self_signed_dialog_mismatched_title">חוסר התאמה בשם המארח</string>
+    <string name="arcgisruntime_self_signed_dialog_remember">האם לזכור?</string>
+    <string name="arcgisruntime_self_signed_dialog_untrusted_host">השרת הזה לא הצליח להוכיח את זהותו. אישור האבטחה שלו אינו מוכר כמהימן על-ידי מערכת ההפעלה שלך. האם ברצונך להמשיך בכל זאת?</string>
+    <string name="arcgisruntime_self_signed_dialog_untrusted_title">מארח לא מהימן</string>
+    <string name="arcgisruntime_sketcheditor_callout_clear">נקה</string>
+    <string name="arcgisruntime_sketcheditor_callout_remove_vertex">הזז שוב נקודת מפנה</string>
+    <string msgid="6264217191555673260" name="search_menu_title">"חיפוש"</string>
+    <string msgid="6277540029070332960" name="status_bar_notification_info_overflow">"999+"</string>
+</resources>

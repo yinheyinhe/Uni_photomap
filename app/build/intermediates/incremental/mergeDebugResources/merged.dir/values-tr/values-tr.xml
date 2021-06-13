@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <string msgid="5976598919945601918" name="abc_action_bar_home_description">"Eve gidiş yolunu göster"</string>
+    <string msgid="8388173803310557296" name="abc_action_bar_up_description">"Yukarı git"</string>
+    <string msgid="3937310113216875497" name="abc_action_menu_overflow_description">"Diğer seçenekler"</string>
+    <string msgid="4692188335987374352" name="abc_action_mode_done">"Bitti"</string>
+    <string msgid="1189761859438369441" name="abc_activity_chooser_view_see_all">"Tümünü göster"</string>
+    <string msgid="2165779757652331008" name="abc_activitychooserview_choose_application">"Bir uygulama seçin"</string>
+    <string msgid="4215997306490295099" name="abc_capital_off">"KAPAT"</string>
+    <string msgid="884982626291842264" name="abc_capital_on">"AÇ"</string>
+    <string msgid="8833365367933412986" name="abc_menu_alt_shortcut_label">"Alt+"</string>
+    <string msgid="2223301931652355242" name="abc_menu_ctrl_shortcut_label">"Ctrl+"</string>
+    <string msgid="838001238306846836" name="abc_menu_delete_shortcut_label">"sil"</string>
+    <string msgid="7986526966204849475" name="abc_menu_enter_shortcut_label">"enter"</string>
+    <string msgid="375214403600139847" name="abc_menu_function_shortcut_label">"Function+"</string>
+    <string msgid="4192209724446364286" name="abc_menu_meta_shortcut_label">"Meta+"</string>
+    <string msgid="4741552369836443843" name="abc_menu_shift_shortcut_label">"Üst Karakter+"</string>
+    <string msgid="5473865519181928982" name="abc_menu_space_shortcut_label">"boşluk"</string>
+    <string msgid="6180552449598693998" name="abc_menu_sym_shortcut_label">"Sym+"</string>
+    <string msgid="5520303668377388990" name="abc_prepend_shortcut_label">"Menü+"</string>
+    <string msgid="7208076849092622260" name="abc_search_hint">"Ara…"</string>
+    <string msgid="3741173234950517107" name="abc_searchview_description_clear">"Sorguyu temizle"</string>
+    <string msgid="693312494995508443" name="abc_searchview_description_query">"Arama sorgusu"</string>
+    <string msgid="3417662926640357176" name="abc_searchview_description_search">"Ara"</string>
+    <string msgid="1486535517437947103" name="abc_searchview_description_submit">"Sorguyu gönder"</string>
+    <string msgid="2293578557972875415" name="abc_searchview_description_voice">"Sesli arama"</string>
+    <string msgid="8875138169939072951" name="abc_shareactionprovider_share_with">"Şununla paylaş:"</string>
+    <string msgid="9055268688411532828" name="abc_shareactionprovider_share_with_application">"<ns1:g id="APPLICATION_NAME">%s</ns1:g> ile paylaş"</string>
+    <string msgid="1656852541809559762" name="abc_toolbar_collapse_description">"Daralt"</string>
+    <string name="arcgisruntime_client_cert_dialog_button_positive">Devam</string>
+    <string name="arcgisruntime_client_cert_dialog_message">Servis, kimliğinizi doğrulamak için ayrıca güvenli bir ekran kilidi de gerektiren bir istemci sertifikası istedi. Bu iletişim kutusunun kapatılması, bir iletişim kutusu açar, burada güvenlik türünüzü iptal edebilir veya değiştirebilirsiniz, bu da bir sertifika belirtmenize olanak tanır.</string>
+    <string name="arcgisruntime_client_cert_dialog_title">İstemci Sertifikası İstendi</string>
+    <string name="arcgisruntime_created_by">%1$s tarafından oluşturuldu</string>
+    <string name="arcgisruntime_created_by_day">%1$s tarafından %2$s tarihinde saat %3$s’de oluşturuldu</string>
+    <string name="arcgisruntime_created_by_full">%1$s tarafından %2$s tarihinde saat %3$s’de oluşturuldu</string>
+    <string name="arcgisruntime_created_by_hour">%1$s tarafından bir saat önce oluşturuldu</string>
+    <string name="arcgisruntime_created_by_hours">%1$s tarafından %2$d saat önce oluşturuldu</string>
+    <string name="arcgisruntime_created_by_minute">%1$s tarafından bir dakika önce oluşturuldu</string>
+    <string name="arcgisruntime_created_by_minutes">%1$s tarafından %2$d dakika önce oluşturuldu</string>
+    <string name="arcgisruntime_created_by_seconds">%1$s tarafından birkaç saniye önce oluşturuldu</string>
+    <string name="arcgisruntime_created_day">%1$s tarihinde saat %2$s’de oluşturuldu</string>
+    <string name="arcgisruntime_created_full">%1$s tarihinde saat %2$s’de oluşturuldu</string>
+    <string name="arcgisruntime_created_hour">Bir saat önce oluşturuldu</string>
+    <string name="arcgisruntime_created_hours">%1$d saat önce oluşturuldu</string>
+    <string name="arcgisruntime_created_minute">Bir dakika önce oluşturuldu</string>
+    <string name="arcgisruntime_created_minutes">%1$d dakika önce oluşturuldu</string>
+    <string name="arcgisruntime_created_seconds">Birkaç saniye önce oluşturuldu</string>
+    <string name="arcgisruntime_edited_by">%1$s tarafından düzenlendi</string>
+    <string name="arcgisruntime_edited_by_day">%1$s tarafından %2$s tarihinde saat %3$s’de düzenlendi</string>
+    <string name="arcgisruntime_edited_by_full">%1$s tarafından %2$s tarihinde saat %3$s’de düzenlendi</string>
+    <string name="arcgisruntime_edited_by_hour">%1$s tarafından bir saat önce düzenlendi</string>
+    <string name="arcgisruntime_edited_by_hours">%1$s tarafından %2$d saat önce düzenlendi</string>
+    <string name="arcgisruntime_edited_by_minute">%1$s tarafından bir dakika önce düzenlendi</string>
+    <string name="arcgisruntime_edited_by_minutes">%1$s tarafından %2$d dakika önce düzenlendi</string>
+    <string name="arcgisruntime_edited_by_seconds">%1$s tarafından birkaç saniye önce düzenlendi</string>
+    <string name="arcgisruntime_edited_day">%1$s tarihinde saat %2$s’de düzenlendi</string>
+    <string name="arcgisruntime_edited_full">%1$s tarihinde saat %2$s’de düzenlendi</string>
+    <string name="arcgisruntime_edited_hour">Bir saat önce düzenlendi</string>
+    <string name="arcgisruntime_edited_hours">%1$d saat önce düzenlendi</string>
+    <string name="arcgisruntime_edited_minute">Bir dakika önce düzenlendi</string>
+    <string name="arcgisruntime_edited_minutes">%1$d dakika önce düzenlendi</string>
+    <string name="arcgisruntime_edited_seconds">Birkaç saniye önce düzenlendi</string>
+    <string name="arcgisruntime_error_field_must_be_numeric">"Sayısal alanda sayısal bir değer olmalıdır"</string>
+    <string name="arcgisruntime_error_invalid_geoelement">"Geçersiz GeoElement"</string>
+    <string name="arcgisruntime_error_max_field_length">Değer %1$d maksimum alan uzunluğunu aşıyor</string>
+    <string name="arcgisruntime_error_null_value_not_allowed">"Null değerine `%1$s`" adlı alan için izin verilmiyor</string>
+    <string name="arcgisruntime_error_out_of_range">"Değer geçerli aralığın dışında %1$s - %2$s"</string>
+    <string name="arcgisruntime_http_auth_request_dialog_button_negative">İptal</string>
+    <string name="arcgisruntime_http_auth_request_dialog_button_positive">Oturum aç</string>
+    <string name="arcgisruntime_http_auth_request_dialog_invalid_credential">Geçersiz kullanıcı adı ya da parola.</string>
+    <string name="arcgisruntime_http_auth_request_dialog_password_hint">Parola</string>
+    <string name="arcgisruntime_http_auth_request_dialog_title">Kimlik Denetimi Gerekiyor</string>
+    <string name="arcgisruntime_http_auth_request_dialog_username_hint">Kullanıcı Adı</string>
+    <string name="arcgisruntime_na_CurrentLanguage">tr</string>
+    <string name="arcgisruntime_range_domain_string">%1$s - %2$s</string>
+    <string name="arcgisruntime_self_signed_dialog_button_negative">Engelle</string>
+    <string name="arcgisruntime_self_signed_dialog_button_positive">Güven</string>
+    <string name="arcgisruntime_self_signed_dialog_mismatched_host">Bu sunucu kendi kimliğini kanıtlayamıyor; güvenlik sertifikası başka bir domainden geliyor. Bunun nedeni hatalı bir yapılandırma veya bağlantınıza müdahale etmeye çalışan bir saldırgan olabilir. Yine de devam etmek istiyor musunuz?</string>
+    <string name="arcgisruntime_self_signed_dialog_mismatched_title">Eşleşmeyen Ana Makine Adı</string>
+    <string name="arcgisruntime_self_signed_dialog_remember">Anımsansın mı?</string>
+    <string name="arcgisruntime_self_signed_dialog_untrusted_host">Bu sunucu kendi kimliğini kanıtlayamıyor; işletim sisteminiz sunucunun güvenlik sertifikasına güvenmiyor. Yine de devam etmek istiyor musunuz?</string>
+    <string name="arcgisruntime_self_signed_dialog_untrusted_title">Güvenilmeyen Ana Makine</string>
+    <string name="arcgisruntime_sketcheditor_callout_clear">Temizle</string>
+    <string name="arcgisruntime_sketcheditor_callout_remove_vertex">Düğümü Kaldır</string>
+    <string msgid="6264217191555673260" name="search_menu_title">"Ara"</string>
+    <string msgid="6277540029070332960" name="status_bar_notification_info_overflow">"999+"</string>
+</resources>

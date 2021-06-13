@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <string msgid="5976598919945601918" name="abc_action_bar_home_description">"Eiti į pagrindinį puslapį"</string>
+    <string msgid="8388173803310557296" name="abc_action_bar_up_description">"Naršyti aukštyn"</string>
+    <string msgid="3937310113216875497" name="abc_action_menu_overflow_description">"Daugiau parinkčių"</string>
+    <string msgid="4692188335987374352" name="abc_action_mode_done">"Atlikta"</string>
+    <string msgid="1189761859438369441" name="abc_activity_chooser_view_see_all">"Žr. viską"</string>
+    <string msgid="2165779757652331008" name="abc_activitychooserview_choose_application">"Pasirinkite programą"</string>
+    <string msgid="4215997306490295099" name="abc_capital_off">"IŠJUNGTI"</string>
+    <string msgid="884982626291842264" name="abc_capital_on">"ĮJUNGTI"</string>
+    <string msgid="8833365367933412986" name="abc_menu_alt_shortcut_label">"„Alt“ +"</string>
+    <string msgid="2223301931652355242" name="abc_menu_ctrl_shortcut_label">"„Ctrl“ +"</string>
+    <string msgid="838001238306846836" name="abc_menu_delete_shortcut_label">"„delete“"</string>
+    <string msgid="7986526966204849475" name="abc_menu_enter_shortcut_label">"„enter“"</string>
+    <string msgid="375214403600139847" name="abc_menu_function_shortcut_label">"„Function“ +"</string>
+    <string msgid="4192209724446364286" name="abc_menu_meta_shortcut_label">"„Meta“ +"</string>
+    <string msgid="4741552369836443843" name="abc_menu_shift_shortcut_label">"„Shift“ +"</string>
+    <string msgid="5473865519181928982" name="abc_menu_space_shortcut_label">"„space“"</string>
+    <string msgid="6180552449598693998" name="abc_menu_sym_shortcut_label">"„Sym“ +"</string>
+    <string msgid="5520303668377388990" name="abc_prepend_shortcut_label">"„Menu“ +"</string>
+    <string msgid="7208076849092622260" name="abc_search_hint">"Ieškoti…"</string>
+    <string msgid="3741173234950517107" name="abc_searchview_description_clear">"Išvalyti užklausą"</string>
+    <string msgid="693312494995508443" name="abc_searchview_description_query">"Paieškos užklausa"</string>
+    <string msgid="3417662926640357176" name="abc_searchview_description_search">"Ieškoti"</string>
+    <string msgid="1486535517437947103" name="abc_searchview_description_submit">"Pateikti užklausą"</string>
+    <string msgid="2293578557972875415" name="abc_searchview_description_voice">"Paieška balsu"</string>
+    <string msgid="8875138169939072951" name="abc_shareactionprovider_share_with">"Bendrinti su"</string>
+    <string msgid="9055268688411532828" name="abc_shareactionprovider_share_with_application">"Bendrinti naudojant programą „<ns1:g id="APPLICATION_NAME">%s</ns1:g>“"</string>
+    <string msgid="1656852541809559762" name="abc_toolbar_collapse_description">"Sutraukti"</string>
+    <string name="arcgisruntime_client_cert_dialog_button_positive">Tęsti</string>
+    <string name="arcgisruntime_client_cert_dialog_message">Paslaugai reikia nurodyti kliento sertifikatą, kad galėtų jus autentifikuoti, o tam reikia saugaus užrakto ekrano. Uždarius šį dialogo langą, atsidarys Android dialogo langas, kuriame galėsite atšaukti arba pakeisti saugos tipą, o tada – nurodyti sertifikatą.</string>
+    <string name="arcgisruntime_client_cert_dialog_title">Reikalingas kliento sertifikatas</string>
+    <string name="arcgisruntime_created_by">Sukūrė %1$s</string>
+    <string name="arcgisruntime_created_by_day">%2$s %3$s sukūrė %1$s</string>
+    <string name="arcgisruntime_created_by_full">%2$s %3$s sukūrė %1$s</string>
+    <string name="arcgisruntime_created_by_hour">Prieš valandą sukūrė %1$s</string>
+    <string name="arcgisruntime_created_by_hours">Prieš %2$d val. sukūrė %1$s</string>
+    <string name="arcgisruntime_created_by_minute">Prieš minutę sukūrė %1$s</string>
+    <string name="arcgisruntime_created_by_minutes">Prieš %2$d min. sukūrė %1$s</string>
+    <string name="arcgisruntime_created_by_seconds">Prieš kelias sekundes sukūrė %1$s</string>
+    <string name="arcgisruntime_created_day">%2$s sukūrė %1$s</string>
+    <string name="arcgisruntime_created_full">%2$s sukūrė %1$s</string>
+    <string name="arcgisruntime_created_hour">Sukurtas prieš valandą</string>
+    <string name="arcgisruntime_created_hours">Sukurta prieš %1$d val.</string>
+    <string name="arcgisruntime_created_minute">Sukurtas prieš minutę</string>
+    <string name="arcgisruntime_created_minutes">Sukurta prieš %1$d min.</string>
+    <string name="arcgisruntime_created_seconds">Sukurtas prieš keletą sekundžių</string>
+    <string name="arcgisruntime_edited_by">Redagavo %1$s</string>
+    <string name="arcgisruntime_edited_by_day">%2$s %3$s redagavo %1$s</string>
+    <string name="arcgisruntime_edited_by_full">%2$s %3$s redagavo %1$s</string>
+    <string name="arcgisruntime_edited_by_hour">Prieš valandą redagavo %1$s</string>
+    <string name="arcgisruntime_edited_by_hours">Prieš %2$d val. redagavo %1$s</string>
+    <string name="arcgisruntime_edited_by_minute">Prieš minutę redagavo %1$s</string>
+    <string name="arcgisruntime_edited_by_minutes">Prieš %2$d min. redagavo %1$s</string>
+    <string name="arcgisruntime_edited_by_seconds">Prieš kelias sekundes redagavo %1$s</string>
+    <string name="arcgisruntime_edited_day">%2$s redagavo %1$s</string>
+    <string name="arcgisruntime_edited_full">%2$s redagavo %1$s</string>
+    <string name="arcgisruntime_edited_hour">Redaguotas prieš valandą</string>
+    <string name="arcgisruntime_edited_hours">Redaguota prieš %1$d val.</string>
+    <string name="arcgisruntime_edited_minute">Redaguotas prieš minutę</string>
+    <string name="arcgisruntime_edited_minutes">Redaguota prieš %1$d min.</string>
+    <string name="arcgisruntime_edited_seconds">Redaguotas prieš keletą sekundžių</string>
+    <string name="arcgisruntime_error_field_must_be_numeric">"Į skaitinį lauką reikia įvesti skaitinę reikšmę"</string>
+    <string name="arcgisruntime_error_invalid_geoelement">"Netinkamas geoelementas"</string>
+    <string name="arcgisruntime_error_max_field_length">Reikšmė viršija maksimalų lauko ilgį %1$d</string>
+    <string name="arcgisruntime_error_null_value_not_allowed">"Laukelyje „%1$s“ neleidžiama naudoti nulinės reikšmės"</string>
+    <string name="arcgisruntime_error_out_of_range">"Reikšmė nepatenka į reikalaujamą intervalą nuo %1$s iki %2$s"</string>
+    <string name="arcgisruntime_http_auth_request_dialog_button_negative">Atšaukti</string>
+    <string name="arcgisruntime_http_auth_request_dialog_button_positive">Prisijunkite</string>
+    <string name="arcgisruntime_http_auth_request_dialog_invalid_credential">Neteisingas vartotojo vardas arba slaptažodis.</string>
+    <string name="arcgisruntime_http_auth_request_dialog_password_hint">Slaptažodis</string>
+    <string name="arcgisruntime_http_auth_request_dialog_title">Reikalingas autentikavimas</string>
+    <string name="arcgisruntime_http_auth_request_dialog_username_hint">Vartotojo vardas</string>
+    <string name="arcgisruntime_na_CurrentLanguage">lt</string>
+    <string name="arcgisruntime_range_domain_string">Nuo %1$s iki %2$s</string>
+    <string name="arcgisruntime_self_signed_dialog_button_negative">Blokuoti</string>
+    <string name="arcgisruntime_self_signed_dialog_button_positive">Patikimumas</string>
+    <string name="arcgisruntime_self_signed_dialog_mismatched_host">Šis serveris negali savęs autentifikuoti. Jo saugos sertifikatas priklauso kitam domenui. Taip galėjo atsitikti dėl netinkamos konfigūracijos arba įsilaužėlis bando nutraukti jūsų ryšį. Ar vis tiek norite tęsti?</string>
+    <string name="arcgisruntime_self_signed_dialog_mismatched_title">Neatitinka serverio pavadinimas</string>
+    <string name="arcgisruntime_self_signed_dialog_remember">Prisiminti?</string>
+    <string name="arcgisruntime_self_signed_dialog_untrusted_host">Šis serveris negali savęs autentifikuoti. Jo saugos sertifikatas jūsų OS yra nepatikimas. Ar vis tiek norite tęsti?</string>
+    <string name="arcgisruntime_self_signed_dialog_untrusted_title">Nepatikimas serveris</string>
+    <string name="arcgisruntime_sketcheditor_callout_clear">Valyti</string>
+    <string name="arcgisruntime_sketcheditor_callout_remove_vertex">Pašalinti viršūnę</string>
+    <string msgid="6264217191555673260" name="search_menu_title">"Ieškoti"</string>
+    <string msgid="6277540029070332960" name="status_bar_notification_info_overflow">"999+"</string>
+</resources>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <string msgid="5976598919945601918" name="abc_action_bar_home_description">"Chỉ đường về nhà"</string>
+    <string msgid="8388173803310557296" name="abc_action_bar_up_description">"Di chuyển lên"</string>
+    <string msgid="3937310113216875497" name="abc_action_menu_overflow_description">"Tùy chọn khác"</string>
+    <string msgid="4692188335987374352" name="abc_action_mode_done">"Xong"</string>
+    <string msgid="1189761859438369441" name="abc_activity_chooser_view_see_all">"Xem tất cả"</string>
+    <string msgid="2165779757652331008" name="abc_activitychooserview_choose_application">"Chọn một ứng dụng"</string>
+    <string msgid="4215997306490295099" name="abc_capital_off">"TẮT"</string>
+    <string msgid="884982626291842264" name="abc_capital_on">"BẬT"</string>
+    <string msgid="8833365367933412986" name="abc_menu_alt_shortcut_label">"Alt+"</string>
+    <string msgid="2223301931652355242" name="abc_menu_ctrl_shortcut_label">"Ctrl+"</string>
+    <string msgid="838001238306846836" name="abc_menu_delete_shortcut_label">"delete"</string>
+    <string msgid="7986526966204849475" name="abc_menu_enter_shortcut_label">"enter"</string>
+    <string msgid="375214403600139847" name="abc_menu_function_shortcut_label">"Function+"</string>
+    <string msgid="4192209724446364286" name="abc_menu_meta_shortcut_label">"Meta+"</string>
+    <string msgid="4741552369836443843" name="abc_menu_shift_shortcut_label">"Shift+"</string>
+    <string msgid="5473865519181928982" name="abc_menu_space_shortcut_label">"space"</string>
+    <string msgid="6180552449598693998" name="abc_menu_sym_shortcut_label">"Sym+"</string>
+    <string msgid="5520303668377388990" name="abc_prepend_shortcut_label">"Menu+"</string>
+    <string msgid="7208076849092622260" name="abc_search_hint">"Tìm kiếm…"</string>
+    <string msgid="3741173234950517107" name="abc_searchview_description_clear">"Xóa truy vấn"</string>
+    <string msgid="693312494995508443" name="abc_searchview_description_query">"Truy vấn tìm kiếm"</string>
+    <string msgid="3417662926640357176" name="abc_searchview_description_search">"Tìm kiếm"</string>
+    <string msgid="1486535517437947103" name="abc_searchview_description_submit">"Gửi truy vấn"</string>
+    <string msgid="2293578557972875415" name="abc_searchview_description_voice">"Tìm kiếm bằng giọng nói"</string>
+    <string msgid="8875138169939072951" name="abc_shareactionprovider_share_with">"Chia sẻ với"</string>
+    <string msgid="9055268688411532828" name="abc_shareactionprovider_share_with_application">"Chia sẻ với <ns1:g id="APPLICATION_NAME">%s</ns1:g>"</string>
+    <string msgid="1656852541809559762" name="abc_toolbar_collapse_description">"Thu gọn"</string>
+    <string name="arcgisruntime_client_cert_dialog_button_positive">Tiếp</string>
+    <string name="arcgisruntime_client_cert_dialog_message">Dịch vụ yêu cầu chứng chỉ khách hàng để xác thực, xa hơn là yêu cầu tạo khóa bảo mật màn hình. Việc đóng hộp thoại này sẽ mở hộp thoại Android để bạn có thể hủy hoặc thay đổi loại bảo mật, cho phép khách hàng xác định chứng chỉ.</string>
+    <string name="arcgisruntime_client_cert_dialog_title">Đòi hỏi chứng chỉ khách hàng</string>
+    <string name="arcgisruntime_created_by">Được tạo bởi %1$s</string>
+    <string name="arcgisruntime_created_by_day">Được tạo bởi %1$s vào %2$s lúc %3$s</string>
+    <string name="arcgisruntime_created_by_full">Được tạo bởi %1$s vào %2$s lúc %3$s</string>
+    <string name="arcgisruntime_created_by_hour">Được tạo bởi %1$s một giờ trước</string>
+    <string name="arcgisruntime_created_by_hours">Được tạo bởi %1$s %2$d giờ trước</string>
+    <string name="arcgisruntime_created_by_minute">Được tạo bởi %1$s một phút trước</string>
+    <string name="arcgisruntime_created_by_minutes">Được tạo bởi %1$s %2$d phút trước</string>
+    <string name="arcgisruntime_created_by_seconds">Được tạo bởi %1$s vài giây trước</string>
+    <string name="arcgisruntime_created_day">Được tạo vào %1$s lúc %2$s</string>
+    <string name="arcgisruntime_created_full">Được tạo vào %1$s lúc %2$s</string>
+    <string name="arcgisruntime_created_hour">Được tạo một giờ trước</string>
+    <string name="arcgisruntime_created_hours">Được tạo %1$d giờ trước</string>
+    <string name="arcgisruntime_created_minute">Được tạo một phút trước</string>
+    <string name="arcgisruntime_created_minutes">Được tạo %1$d phút trước</string>
+    <string name="arcgisruntime_created_seconds">Được tạo vài giây trước</string>
+    <string name="arcgisruntime_edited_by">Được chỉnh sửa bởi %1$s</string>
+    <string name="arcgisruntime_edited_by_day">Được chỉnh sửa bởi %1$s vào %2$s lúc %3$s</string>
+    <string name="arcgisruntime_edited_by_full">Được chỉnh sửa bởi %1$s vào %2$s lúc %3$s</string>
+    <string name="arcgisruntime_edited_by_hour">Được chỉnh sửa bởi %1$s một giờ trước</string>
+    <string name="arcgisruntime_edited_by_hours">Được chỉnh sửa bởi %1$s %2$d giờ trước</string>
+    <string name="arcgisruntime_edited_by_minute">Được chỉnh sửa bởi %1$s một phút trước</string>
+    <string name="arcgisruntime_edited_by_minutes">Được chỉnh sửa bởi %1$s %2$d phút trước</string>
+    <string name="arcgisruntime_edited_by_seconds">Được chỉnh sửa bởi %1$s vài giây trước</string>
+    <string name="arcgisruntime_edited_day">Được chỉnh sửa vào %1$s lúc %2$s</string>
+    <string name="arcgisruntime_edited_full">Được chỉnh sửa vào %1$s lúc %2$s</string>
+    <string name="arcgisruntime_edited_hour">Được sửa một giờ trước</string>
+    <string name="arcgisruntime_edited_hours">Được chỉnh sửa %1$d giờ trước</string>
+    <string name="arcgisruntime_edited_minute">Được sửa một phút trước</string>
+    <string name="arcgisruntime_edited_minutes">Được chỉnh sửa %1$d phút trước</string>
+    <string name="arcgisruntime_edited_seconds">Được sửa vài giây trước</string>
+    <string name="arcgisruntime_error_field_must_be_numeric">"Trường số phải có giá trị số"</string>
+    <string name="arcgisruntime_error_invalid_geoelement">"Phần tử Địa lý Không hợp lệ"</string>
+    <string name="arcgisruntime_error_max_field_length">Giá trị vượt quá độ dài trường tối đa là %1$d</string>
+    <string name="arcgisruntime_error_null_value_not_allowed">"Không cho phép giá trị rỗng cho tên trường `%1$s`"</string>
+    <string name="arcgisruntime_error_out_of_range">"Giá trị nằm ngoài phạm vi hợp lệ%1$s đến %2$s"</string>
+    <string name="arcgisruntime_http_auth_request_dialog_button_negative">Hủy</string>
+    <string name="arcgisruntime_http_auth_request_dialog_button_positive">Đăng nhập</string>
+    <string name="arcgisruntime_http_auth_request_dialog_invalid_credential">Tên đăng nhập hoặc mật khẩu không hợp lệ.</string>
+    <string name="arcgisruntime_http_auth_request_dialog_password_hint">Mật khẩu</string>
+    <string name="arcgisruntime_http_auth_request_dialog_title">Yêu cầu Xác thực</string>
+    <string name="arcgisruntime_http_auth_request_dialog_username_hint">Tên người dùng</string>
+    <string name="arcgisruntime_na_CurrentLanguage">vi</string>
+    <string name="arcgisruntime_range_domain_string">%1$s đến %2$s</string>
+    <string name="arcgisruntime_self_signed_dialog_button_negative">Chặn</string>
+    <string name="arcgisruntime_self_signed_dialog_button_positive">Tin cậy</string>
+    <string name="arcgisruntime_self_signed_dialog_mismatched_host">Server không xác minh được; chứng chỉ bảo mật của server từ domain khác. Điều này có thể do lỗi cấu hình hoặc kẻ tấn công đã chặn kết nối của bạn. Bạn vẫn muốn tiếp tục?</string>
+    <string name="arcgisruntime_self_signed_dialog_mismatched_title">Tên máy chủ không khớp</string>
+    <string name="arcgisruntime_self_signed_dialog_remember">Ghi nhớ?</string>
+    <string name="arcgisruntime_self_signed_dialog_untrusted_host">Server không xác minh được, OS thông báo chứng chỉ bảo mật không đáng tin cậy. Bạn vẫn muốn tiếp tục?</string>
+    <string name="arcgisruntime_self_signed_dialog_untrusted_title">Máy chủ không đáng tin cậy</string>
+    <string name="arcgisruntime_sketcheditor_callout_clear">Xóa</string>
+    <string name="arcgisruntime_sketcheditor_callout_remove_vertex">Gỡ bỏ Vertex</string>
+    <string msgid="6264217191555673260" name="search_menu_title">"Tìm kiếm"</string>
+    <string msgid="6277540029070332960" name="status_bar_notification_info_overflow">"999+"</string>
+</resources>
