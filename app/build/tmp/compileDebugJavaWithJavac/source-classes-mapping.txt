@@ -5,6 +5,8 @@ com/HBuilder/UniPlugin/MainActivity.java
  com.HBuilder.UniPlugin.MainActivity$3
 com/HBuilder/UniPlugin/CompassView.java
  com.HBuilder.UniPlugin.CompassView
+com/HBuilder/UniPlugin/DatabaseHelper.java
+ com.HBuilder.UniPlugin.DatabaseHelper
 com/HBuilder/UniPlugin/ScreenUtil.java
  com.HBuilder.UniPlugin.ScreenUtil
 com/HBuilder/UniPlugin/SharedData.java

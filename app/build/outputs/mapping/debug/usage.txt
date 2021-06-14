@@ -128,20 +128,7 @@ androidx.appcompat.app.ActionBar$LayoutParams:
     public void <init>(int,int,int)
 androidx.appcompat.app.ActionBar$NavigationMode
 androidx.appcompat.app.ActionBar$OnNavigationListener
-androidx.appcompat.app.ActionBar$Tab:
-    public static final int INVALID_POSITION
-    public abstract int getPosition()
-    public abstract java.lang.Object getTag()
-    public abstract androidx.appcompat.app.ActionBar$Tab setContentDescription(int)
-    public abstract androidx.appcompat.app.ActionBar$Tab setContentDescription(java.lang.CharSequence)
-    public abstract androidx.appcompat.app.ActionBar$Tab setCustomView(int)
-    public abstract androidx.appcompat.app.ActionBar$Tab setCustomView(android.view.View)
-    public abstract androidx.appcompat.app.ActionBar$Tab setIcon(int)
-    public abstract androidx.appcompat.app.ActionBar$Tab setIcon(android.graphics.drawable.Drawable)
-    public abstract androidx.appcompat.app.ActionBar$Tab setTabListener(androidx.appcompat.app.ActionBar$TabListener)
-    public abstract androidx.appcompat.app.ActionBar$Tab setTag(java.lang.Object)
-    public abstract androidx.appcompat.app.ActionBar$Tab setText(int)
-    public abstract androidx.appcompat.app.ActionBar$Tab setText(java.lang.CharSequence)
+androidx.appcompat.app.ActionBar$Tab
 androidx.appcompat.app.ActionBar$TabListener
 androidx.appcompat.app.ActionBar:
     public static final int DISPLAY_HOME_AS_UP
@@ -539,6 +526,9 @@ androidx.appcompat.graphics.drawable.StateListDrawable:
     public void inflate(android.content.Context,android.content.res.Resources,org.xmlpull.v1.XmlPullParser,android.util.AttributeSet,android.content.res.Resources$Theme)
     private void inflateChildElements(android.content.Context,android.content.res.Resources,org.xmlpull.v1.XmlPullParser,android.util.AttributeSet,android.content.res.Resources$Theme)
     private void updateStateFromTypedArray(android.content.res.TypedArray)
+androidx.appcompat.view.ActionBarPolicy:
+    public int getStackedTabMaxWidth()
+    public int getTabContainerHeight()
 androidx.appcompat.view.ActionMode:
     public boolean isUiFocusable()
 androidx.appcompat.view.StandaloneActionMode:
@@ -577,6 +567,9 @@ androidx.appcompat.view.menu.ActionMenuItemView:
     private static final int MAX_ICON_SIZE
     private static final java.lang.String TAG
     public void <init>(android.content.Context)
+    public void setCheckable(boolean)
+    public void setChecked(boolean)
+    public void setExpandedFormat(boolean)
     public void setShortcut(boolean,char)
     public boolean showsIcon()
 androidx.appcompat.view.menu.BaseMenuPresenter:
@@ -586,8 +579,12 @@ androidx.appcompat.view.menu.CascadingMenuPopup:
     static final int HORIZ_POSITION_LEFT
     static final int HORIZ_POSITION_RIGHT
     static final int SUBMENU_TIMEOUT_MS
+androidx.appcompat.view.menu.ExpandedMenuView:
+    private int mAnimations
+    public int getWindowAnimations()
 androidx.appcompat.view.menu.ListMenuItemView:
     private static final java.lang.String TAG
+    public void setChecked(boolean)
     public boolean showsIcon()
 androidx.appcompat.view.menu.ListMenuPresenter:
     private static final java.lang.String TAG
@@ -610,6 +607,7 @@ androidx.appcompat.view.menu.MenuItemImpl:
     static final int NO_ICON
     private static final int SHOW_AS_ACTION_MASK
     private static final java.lang.String TAG
+    public void actionFormatChanged()
     java.lang.Runnable getCallback()
     public boolean requiresOverflow()
     public android.view.MenuItem setCallback(java.lang.Runnable)
@@ -645,6 +643,8 @@ androidx.appcompat.widget.AbsActionBarView:
     public void animateToVisibility(int)
     public boolean canShowOverflowMenu()
     public void dismissPopupMenus()
+    public int getAnimatedVisibility()
+    public int getContentHeight()
     public boolean hideOverflowMenu()
     public boolean isOverflowMenuShowPending()
     public boolean isOverflowMenuShowing()
@@ -653,10 +653,15 @@ androidx.appcompat.widget.AbsActionBarView:
     public boolean showOverflowMenu()
 androidx.appcompat.widget.ActionBarContainer:
     public void <init>(android.content.Context)
+    public void setPrimaryBackground(android.graphics.drawable.Drawable)
+    public void setSplitBackground(android.graphics.drawable.Drawable)
+    public void setStackedBackground(android.graphics.drawable.Drawable)
 androidx.appcompat.widget.ActionBarContextView:
     public synthetic bridge void animateToVisibility(int)
     public synthetic bridge boolean canShowOverflowMenu()
     public synthetic bridge void dismissPopupMenus()
+    public synthetic bridge int getAnimatedVisibility()
+    public synthetic bridge int getContentHeight()
     public boolean hideOverflowMenu()
     public synthetic bridge boolean isOverflowMenuShowPending()
     public boolean isOverflowMenuShowing()
@@ -668,11 +673,16 @@ androidx.appcompat.widget.ActionBarOverlayLayout:
     private static final int ACTION_BAR_ANIMATE_DELAY
     private static final java.lang.String TAG
     public void <init>(android.content.Context)
+    public java.lang.CharSequence getTitle()
     public boolean hasIcon()
     public boolean hasLogo()
     public boolean isHideOnContentScrollEnabled()
     public void restoreToolbarHierarchyState(android.util.SparseArray)
     public void saveToolbarHierarchyState(android.util.SparseArray)
+    public void setIcon(int)
+    public void setIcon(android.graphics.drawable.Drawable)
+    public void setLogo(int)
+    public void setUiOptions(int)
 androidx.appcompat.widget.ActionMenuPresenter:
     private static final java.lang.String TAG
     public boolean isOverflowReserved()
@@ -684,6 +694,8 @@ androidx.appcompat.widget.ActionMenuView:
     static final int GENERATED_ITEM_PADDING
     static final int MIN_CELL_SIZE
     private static final java.lang.String TAG
+    public int getPopupTheme()
+    public int getWindowAnimations()
 androidx.appcompat.widget.ActivityChooserModel$ActivityChooserModelClient
 androidx.appcompat.widget.ActivityChooserModel$ActivityResolveInfo
 androidx.appcompat.widget.ActivityChooserModel$ActivitySorter
@@ -743,8 +755,17 @@ androidx.appcompat.widget.ActivityChooserView$ActivityChooserViewAdapter:
     private static final int ITEM_VIEW_TYPE_FOOTER
     public static final int MAX_ACTIVITY_COUNT_DEFAULT
     public static final int MAX_ACTIVITY_COUNT_UNLIMITED
+    public void setDataModel(androidx.appcompat.widget.ActivityChooserModel)
 androidx.appcompat.widget.ActivityChooserView:
     public void <init>(android.content.Context)
+    public androidx.appcompat.widget.ActivityChooserModel getDataModel()
+    public void setActivityChooserModel(androidx.appcompat.widget.ActivityChooserModel)
+    public void setDefaultActionButtonContentDescription(int)
+    public void setExpandActivityOverflowButtonContentDescription(int)
+    public void setExpandActivityOverflowButtonDrawable(android.graphics.drawable.Drawable)
+    public void setInitialActivityCount(int)
+    public void setOnDismissListener(android.widget.PopupWindow$OnDismissListener)
+    public void setProvider(androidx.core.view.ActionProvider)
 androidx.appcompat.widget.AlertDialogLayout:
     public void <init>(android.content.Context)
 androidx.appcompat.widget.AppCompatCheckedTextView:
@@ -798,6 +819,7 @@ androidx.appcompat.widget.AppCompatToggleButton:
     public void <init>(android.content.Context)
 androidx.appcompat.widget.ButtonBarLayout:
     private static final int PEEK_BUTTON_DP
+    public void setAllowStacking(boolean)
 androidx.appcompat.widget.DecorContentParent:
     public abstract java.lang.CharSequence getTitle()
     public abstract boolean hasIcon()
@@ -816,6 +838,7 @@ androidx.appcompat.widget.DecorToolbar:
     public abstract int getHeight()
     public abstract android.view.Menu getMenu()
     public abstract java.lang.CharSequence getSubtitle()
+    public abstract java.lang.CharSequence getTitle()
     public abstract int getVisibility()
     public abstract boolean hasEmbeddedTabs()
     public abstract boolean hasIcon()
@@ -829,6 +852,9 @@ androidx.appcompat.widget.DecorToolbar:
     public abstract void setDefaultNavigationIcon(android.graphics.drawable.Drawable)
     public abstract void setDropdownParams(android.widget.SpinnerAdapter,android.widget.AdapterView$OnItemSelectedListener)
     public abstract void setDropdownSelectedPosition(int)
+    public abstract void setIcon(int)
+    public abstract void setIcon(android.graphics.drawable.Drawable)
+    public abstract void setLogo(int)
     public abstract void setLogo(android.graphics.drawable.Drawable)
     public abstract void setMenuCallbacks(androidx.appcompat.view.menu.MenuPresenter$Callback,androidx.appcompat.view.menu.MenuBuilder$Callback)
     public abstract void setNavigationContentDescription(int)
@@ -916,21 +942,48 @@ androidx.appcompat.widget.ResourceManagerInternal:
     private static final java.lang.String TAG
 androidx.appcompat.widget.RtlSpacingHelper:
     public static final int UNDEFINED
-androidx.appcompat.widget.ScrollingTabContainerView$TabView:
-    private static final java.lang.String ACCESSIBILITY_CLASS_NAME
+androidx.appcompat.widget.ScrollingTabContainerView$1
+androidx.appcompat.widget.ScrollingTabContainerView$TabAdapter
+androidx.appcompat.widget.ScrollingTabContainerView$TabClickListener
+androidx.appcompat.widget.ScrollingTabContainerView$TabView
 androidx.appcompat.widget.ScrollingTabContainerView$VisibilityAnimListener
 androidx.appcompat.widget.ScrollingTabContainerView:
     private static final int FADE_DURATION
     private static final java.lang.String TAG
+    private boolean mAllowCollapse
+    private int mContentHeight
+    int mMaxTabWidth
+    private int mSelectedTabIndex
+    int mStackedTabMaxWidth
+    private androidx.appcompat.widget.ScrollingTabContainerView$TabClickListener mTabClickListener
+    androidx.appcompat.widget.LinearLayoutCompat mTabLayout
+    java.lang.Runnable mTabSelector
+    private android.widget.Spinner mTabSpinner
     protected final androidx.appcompat.widget.ScrollingTabContainerView$VisibilityAnimListener mVisAnimListener
     protected android.view.ViewPropertyAnimator mVisibilityAnim
+    private static final android.view.animation.Interpolator sAlphaInterpolator
+    static void <clinit>()
     public void <init>(android.content.Context)
     public void addTab(androidx.appcompat.app.ActionBar$Tab,int,boolean)
     public void addTab(androidx.appcompat.app.ActionBar$Tab,boolean)
+    public void animateToTab(int)
     public void animateToVisibility(int)
+    private android.widget.Spinner createSpinner()
     private androidx.appcompat.widget.LinearLayoutCompat createTabLayout()
+    androidx.appcompat.widget.ScrollingTabContainerView$TabView createTabView(androidx.appcompat.app.ActionBar$Tab,boolean)
+    private boolean isCollapsed()
+    public void onAttachedToWindow()
+    protected void onConfigurationChanged(android.content.res.Configuration)
+    public void onDetachedFromWindow()
+    public void onItemSelected(android.widget.AdapterView,android.view.View,int,long)
+    public void onMeasure(int,int)
+    public void onNothingSelected(android.widget.AdapterView)
+    private void performCollapse()
+    private boolean performExpand()
     public void removeAllTabs()
     public void removeTabAt(int)
+    public void setContentHeight(int)
+    public void setTabSelected(int)
     public void updateTab(int)
 androidx.appcompat.widget.SearchView$SearchAutoComplete:
     public void <init>(android.content.Context)
@@ -938,9 +991,30 @@ androidx.appcompat.widget.SearchView:
     static final boolean DBG
     private static final java.lang.String IME_OPTION_NO_MICROPHONE
     static final java.lang.String LOG_TAG
+    private boolean mQueryRefinement
+    public int getImeOptions()
+    public int getInputType()
+    public int getMaxWidth()
+    public java.lang.CharSequence getQuery()
+    int getSuggestionCommitIconResId()
+    int getSuggestionRowLayout()
+    public androidx.cursoradapter.widget.CursorAdapter getSuggestionsAdapter()
+    private boolean hasVoiceSearch()
     public boolean isIconfiedByDefault()
     public boolean isQueryRefinementEnabled()
     public boolean isSubmitButtonEnabled()
+    public void setAppSearchData(android.os.Bundle)
+    public void setOnCloseListener(androidx.appcompat.widget.SearchView$OnCloseListener)
+    public void setOnQueryTextFocusChangeListener(android.view.View$OnFocusChangeListener)
+    public void setOnQueryTextListener(androidx.appcompat.widget.SearchView$OnQueryTextListener)
+    public void setOnSearchClickListener(android.view.View$OnClickListener)
+    public void setOnSuggestionListener(androidx.appcompat.widget.SearchView$OnSuggestionListener)
+    public void setQueryHint(java.lang.CharSequence)
+    public void setQueryRefinementEnabled(boolean)
+    public void setSearchableInfo(android.app.SearchableInfo)
+    public void setSubmitButtonEnabled(boolean)
+    public void setSuggestionsAdapter(androidx.cursoradapter.widget.CursorAdapter)
+    private void updateSearchAutoComplete()
 androidx.appcompat.widget.ShareActionProvider$OnShareTargetSelectedListener
 androidx.appcompat.widget.ShareActionProvider$ShareActivityChooserModelPolicy
 androidx.appcompat.widget.ShareActionProvider$ShareMenuItemOnMenuItemClickListener
@@ -953,8 +1027,10 @@ androidx.appcompat.widget.SuggestionsAdapter:
     static final int REFINE_ALL
     static final int REFINE_BY_ENTRY
     static final int REFINE_NONE
+    public void <init>(android.content.Context,androidx.appcompat.widget.SearchView,android.app.SearchableInfo,java.util.WeakHashMap)
     public void close()
     public int getQueryRefinement()
+    public void setQueryRefinement(int)
 androidx.appcompat.widget.ThemeUtils:
     private static final java.lang.String TAG
     private void <init>()
@@ -997,6 +1073,7 @@ androidx.appcompat.widget.ToolbarWidgetWrapper:
     public int getHeight()
     public android.view.Menu getMenu()
     public java.lang.CharSequence getSubtitle()
+    public java.lang.CharSequence getTitle()
     public int getVisibility()
     public boolean hasEmbeddedTabs()
     public boolean hasIcon()
@@ -1008,6 +1085,8 @@ androidx.appcompat.widget.ToolbarWidgetWrapper:
     public void setDefaultNavigationIcon(android.graphics.drawable.Drawable)
     public void setDropdownParams(android.widget.SpinnerAdapter,android.widget.AdapterView$OnItemSelectedListener)
     public void setDropdownSelectedPosition(int)
+    public void setIcon(int)
+    public void setLogo(int)
     public void setMenuCallbacks(androidx.appcompat.view.menu.MenuPresenter$Callback,androidx.appcompat.view.menu.MenuBuilder$Callback)
     public void setNavigationIcon(int)
     public void setNavigationMode(int)
@@ -1023,6 +1102,13 @@ androidx.appcompat.widget.TooltipPopup:
 androidx.appcompat.widget.VectorEnabledTintResources:
     public static final int MAX_SDK_WHERE_REQUIRED
     public static void setCompatVectorFromResourcesEnabled(boolean)
+androidx.appcompat.widget.ViewStubCompat:
+    public int getInflatedId()
+    public android.view.LayoutInflater getLayoutInflater()
+    public int getLayoutResource()
+    public void setInflatedId(int)
+    public void setLayoutResource(int)
+    public void setOnInflateListener(androidx.appcompat.widget.ViewStubCompat$OnInflateListener)
 androidx.appcompat.widget.ViewUtils:
     private static final java.lang.String TAG
     private void <init>()
@@ -1225,6 +1311,26 @@ androidx.constraintlayout.helper.widget.Flow:
     public static final int WRAP_CHAIN
     public static final int WRAP_NONE
     public void <init>(android.content.Context)
+    public void setFirstHorizontalBias(float)
+    public void setFirstHorizontalStyle(int)
+    public void setFirstVerticalBias(float)
+    public void setFirstVerticalStyle(int)
+    public void setHorizontalAlign(int)
+    public void setHorizontalBias(float)
+    public void setHorizontalGap(int)
+    public void setHorizontalStyle(int)
+    public void setMaxElementsWrap(int)
+    public void setOrientation(int)
+    public void setPadding(int)
+    public void setPaddingBottom(int)
+    public void setPaddingLeft(int)
+    public void setPaddingRight(int)
+    public void setPaddingTop(int)
+    public void setVerticalAlign(int)
+    public void setVerticalBias(float)
+    public void setVerticalGap(int)
+    public void setVerticalStyle(int)
+    public void setWrapMode(int)
 androidx.constraintlayout.helper.widget.Layer:
     private static final java.lang.String TAG
     public void <init>(android.content.Context)
@@ -1287,42 +1393,7 @@ androidx.constraintlayout.motion.widget.Debug:
     public static java.lang.String getLocation2()
     public static java.lang.String getName(android.content.Context,int[])
     public static void printStack(java.lang.String,int)
-androidx.constraintlayout.motion.widget.DesignTool:
-    private static final boolean DEBUG
-    private static final java.lang.String TAG
-    private androidx.constraintlayout.motion.widget.MotionScene mSceneCache
-    private static void Connect(int,androidx.constraintlayout.widget.ConstraintSet,android.view.View,java.util.HashMap,int,int)
-    private static int GetPxFromDp(int,java.lang.String)
-    private static void SetAbsolutePositions(int,androidx.constraintlayout.widget.ConstraintSet,android.view.View,java.util.HashMap)
-    private static void SetBias(androidx.constraintlayout.widget.ConstraintSet,android.view.View,java.util.HashMap,int)
-    private static void SetDimensions(int,androidx.constraintlayout.widget.ConstraintSet,android.view.View,java.util.HashMap,int)
-    public int designAccess(int,java.lang.String,java.lang.Object,float[],int,float[],int)
-    public void disableAutoTransition(boolean)
-    public void dumpConstraintSet(java.lang.String)
-    public int getAnimationKeyFrames(java.lang.Object,float[])
-    public int getAnimationPath(java.lang.Object,float[],int)
-    public void getAnimationRectangles(java.lang.Object,float[])
-    public java.lang.String getEndState()
-    public int getKeyFrameInfo(java.lang.Object,int,int[])
-    public float getKeyFramePosition(java.lang.Object,int,float,float)
-    public int getKeyFramePositions(java.lang.Object,int[],float[])
-    public java.lang.Object getKeyframe(int,int,int)
-    public java.lang.Object getKeyframe(java.lang.Object,int,int)
-    public java.lang.Object getKeyframeAtLocation(java.lang.Object,float,float)
-    public java.lang.Boolean getPositionKeyframe(java.lang.Object,java.lang.Object,float,float,java.lang.String[],float[])
-    public float getProgress()
-    public java.lang.String getStartState()
-    public java.lang.String getState()
-    public long getTransitionTimeMs()
-    public boolean isInTransition()
-    public void setAttributes(int,java.lang.String,java.lang.Object,java.lang.Object)
-    public void setKeyFrame(java.lang.Object,int,java.lang.String,java.lang.Object)
-    public boolean setKeyFramePosition(java.lang.Object,int,int,float,float)
-    public void setKeyframe(java.lang.Object,java.lang.String,java.lang.Object)
-    public void setState(java.lang.String)
-    public void setToolPosition(float)
-    public void setTransition(java.lang.String,java.lang.String)
-    public void setViewDebug(java.lang.Object,int)
+androidx.constraintlayout.motion.widget.DesignTool
 androidx.constraintlayout.motion.widget.Key:
     static final java.lang.String ALPHA
     static final java.lang.String CUSTOM
@@ -1545,7 +1616,12 @@ androidx.constraintlayout.motion.widget.MotionController:
     void positionKeyframe(android.view.View,androidx.constraintlayout.motion.widget.KeyPositionBase,float,float,java.lang.String[],float[])
     public void setDrawPath(int)
 androidx.constraintlayout.motion.widget.MotionHelper:
+    private float mProgress
+    protected android.view.View[] views
     public void <init>(android.content.Context)
+    public float getProgress()
+    public void setProgress(float)
+    public void setProgress(android.view.View,float)
 androidx.constraintlayout.motion.widget.MotionInterpolator:
     public abstract float getInterpolation(float)
 androidx.constraintlayout.motion.widget.MotionLayout$DevModeDraw:
@@ -1564,6 +1640,10 @@ androidx.constraintlayout.motion.widget.MotionLayout$MyTracker:
     public void computeCurrentVelocity(int,float)
     public float getXVelocity(int)
     public float getYVelocity(int)
+androidx.constraintlayout.motion.widget.MotionLayout$StateCache:
+    public android.os.Bundle getTransitionState()
+    public void recordState()
+    public void setTransitionState(android.os.Bundle)
 androidx.constraintlayout.motion.widget.MotionLayout:
     private static final boolean DEBUG
     public static final int DEBUG_SHOW_NONE
@@ -1582,19 +1662,39 @@ androidx.constraintlayout.motion.widget.MotionLayout:
     public static final int VELOCITY_POST_LAYOUT
     public static final int VELOCITY_STATIC_LAYOUT
     public static final int VELOCITY_STATIC_POST_LAYOUT
+    private androidx.constraintlayout.motion.widget.DesignTool mDesignTool
     public void <init>(android.content.Context)
+    static synthetic int access$100(androidx.constraintlayout.motion.widget.MotionLayout)
     public void addTransitionListener(androidx.constraintlayout.motion.widget.MotionLayout$TransitionListener)
     private void debugPos()
     void disableAutoTransition(boolean)
     public void enableTransition(int,boolean)
     private void fireTransitionStarted(androidx.constraintlayout.motion.widget.MotionLayout,int,int)
     public androidx.constraintlayout.widget.ConstraintSet getConstraintSet(int)
+    public int[] getConstraintSetIds()
     java.lang.String getConstraintSetNames(int)
     public void getDebugMode(boolean)
+    public java.util.ArrayList getDefinedTransitions()
+    public androidx.constraintlayout.motion.widget.DesignTool getDesignTool()
+    public float getTargetPosition()
+    public androidx.constraintlayout.motion.widget.MotionScene$Transition getTransition(int)
+    public android.os.Bundle getTransitionState()
+    public long getTransitionTimeMs()
+    public float getVelocity()
     public void loadLayoutDescription(int)
     int lookUpConstraintId(java.lang.String)
     public void rebuildMotion()
     public boolean removeTransitionListener(androidx.constraintlayout.motion.widget.MotionLayout$TransitionListener)
+    public void setDebugMode(int)
+    public void setInteractionEnabled(boolean)
+    public void setInterpolatedProgress(float)
+    public void setOnHide(float)
+    public void setOnShow(float)
+    public void setScene(androidx.constraintlayout.motion.widget.MotionScene)
+    public void setTransition(int)
+    public void setTransitionDuration(int)
+    public void setTransitionListener(androidx.constraintlayout.motion.widget.MotionLayout$TransitionListener)
+    public void setTransitionState(android.os.Bundle)
     public void updateState()
     public void updateState(int,androidx.constraintlayout.widget.ConstraintSet)
 androidx.constraintlayout.motion.widget.MotionPaths:
@@ -1625,11 +1725,13 @@ androidx.constraintlayout.motion.widget.MotionScene$Transition:
     public static final int AUTO_NONE
     static final int TRANSITION_FLAG_FIRST_DRAW
     public void <init>(int,androidx.constraintlayout.motion.widget.MotionScene,int,int)
+    static synthetic int access$300(androidx.constraintlayout.motion.widget.MotionScene$Transition)
     public int getId()
     public java.util.List getKeyFrameList()
     public java.util.List getOnClickList()
     public int getPathMotionArc()
     public float getStagger()
+    public void setDuration(int)
     public void setEnable(boolean)
     public void setPathMotionArc(int)
     public void setStagger(float)
@@ -1653,9 +1755,11 @@ androidx.constraintlayout.motion.widget.MotionScene:
     public void addTransition(androidx.constraintlayout.motion.widget.MotionScene$Transition)
     public void disableAutoTransition(boolean)
     public androidx.constraintlayout.widget.ConstraintSet getConstraintSet(android.content.Context,java.lang.String)
+    public int[] getConstraintSetIds()
     private int getIndex(androidx.constraintlayout.motion.widget.MotionScene$Transition)
     androidx.constraintlayout.motion.widget.Key getKeyFrame(android.content.Context,int,int,int)
     public float getPathPercent(android.view.View,int)
+    public androidx.constraintlayout.motion.widget.MotionScene$Transition getTransitionById(int)
     int getTransitionDirection(int)
     boolean hasKeyFramePosition(android.view.View,int)
     public int lookUpConstraintId(java.lang.String)
@@ -1663,6 +1767,7 @@ androidx.constraintlayout.motion.widget.MotionScene:
     protected void onLayout(boolean,int,int,int,int)
     public void removeTransition(androidx.constraintlayout.motion.widget.MotionScene$Transition)
     public void setConstraintSet(int,androidx.constraintlayout.widget.ConstraintSet)
+    public void setDuration(int)
     public void setKeyframe(android.view.View,int,java.lang.String,java.lang.Object)
     public boolean validateLayout(androidx.constraintlayout.motion.widget.MotionLayout)
 androidx.constraintlayout.motion.widget.ProxyInterface
@@ -2040,13 +2145,31 @@ androidx.constraintlayout.solver.widgets.analyzer.WidgetRun:
     public long wrapSize(int)
 androidx.constraintlayout.utils.widget.ImageFilterButton:
     public void <init>(android.content.Context)
+    public float getContrast()
+    public float getCrossfade()
+    public float getRound()
+    public float getRoundPercent()
+    public float getSaturation()
+    public float getWarmth()
+    public void setBrightness(float)
+    public void setCrossfade(float)
 androidx.constraintlayout.utils.widget.ImageFilterView:
     public void <init>(android.content.Context)
+    public float getBrightness()
+    public float getContrast()
+    public float getCrossfade()
+    public float getRound()
+    public float getRoundPercent()
+    public float getSaturation()
+    public float getWarmth()
+    public void setBrightness(float)
+    public void setCrossfade(float)
 androidx.constraintlayout.utils.widget.MockView:
     public void <init>(android.content.Context)
 androidx.constraintlayout.utils.widget.MotionTelltales:
     private static final java.lang.String TAG
     public void <init>(android.content.Context)
+    public void setText(java.lang.CharSequence)
 androidx.constraintlayout.widget.Barrier:
     public static final int BOTTOM
     public static final int END
@@ -2054,6 +2177,7 @@ androidx.constraintlayout.widget.Barrier:
     public static final int RIGHT
     public static final int START
     public static final int TOP
+    public void setDpMargin(int)
 androidx.constraintlayout.widget.ConstraintAttribute:
     private static final java.lang.String TAG
     public void <init>(java.lang.String,androidx.constraintlayout.widget.ConstraintAttribute$AttributeType)
@@ -2151,11 +2275,22 @@ androidx.constraintlayout.widget.ConstraintLayout:
     private static final java.lang.String TAG
     private static final boolean USE_CONSTRAINTS_HELPER
     public static final java.lang.String VERSION
+    private androidx.constraintlayout.widget.ConstraintsChangedListener mConstraintsChangedListener
     private androidx.constraintlayout.solver.Metrics mMetrics
     public void <init>(android.content.Context)
     public void <init>(android.content.Context,android.util.AttributeSet,int,int)
     public void fillMetrics(androidx.constraintlayout.solver.Metrics)
+    public int getMaxHeight()
+    public int getMaxWidth()
+    public int getMinHeight()
+    public int getMinWidth()
     public void loadLayoutDescription(int)
+    public void setMaxHeight(int)
+    public void setMaxWidth(int)
+    public void setMinHeight(int)
+    public void setMinWidth(int)
+    public void setOnConstraintsChanged(androidx.constraintlayout.widget.ConstraintsChangedListener)
+    public void setOptimizationLevel(int)
     public void setState(int,int,int)
 androidx.constraintlayout.widget.ConstraintLayoutStates$Variant:
     int mId
@@ -2163,6 +2298,7 @@ androidx.constraintlayout.widget.ConstraintLayoutStates:
     private static final boolean DEBUG
     public static final java.lang.String TAG
     public boolean needsToChange(int,float,float)
+    public void setOnConstraintsChanged(androidx.constraintlayout.widget.ConstraintsChangedListener)
 androidx.constraintlayout.widget.ConstraintProperties
 androidx.constraintlayout.widget.ConstraintSet$Constraint:
     static synthetic void access$500(androidx.constraintlayout.widget.ConstraintSet$Constraint,java.lang.String,int)
@@ -2461,9 +2597,15 @@ androidx.constraintlayout.widget.Group:
     public void <init>(android.content.Context)
 androidx.constraintlayout.widget.Guideline:
     public void <init>(android.content.Context,android.util.AttributeSet,int,int)
+    public void setGuidelineBegin(int)
+    public void setGuidelineEnd(int)
+    public void setGuidelinePercent(float)
 androidx.constraintlayout.widget.Placeholder:
     public void <init>(android.content.Context)
     public void <init>(android.content.Context,android.util.AttributeSet,int,int)
+    public int getEmptyVisibility()
+    public void setContentId(int)
+    public void setEmptyVisibility(int)
 androidx.constraintlayout.widget.StateSet$Variant:
     int mId
 androidx.constraintlayout.widget.StateSet:
@@ -3825,6 +3967,7 @@ androidx.core.widget.NestedScrollView:
     public boolean dispatchNestedScroll(int,int,int,int,int[],int)
     public boolean isFillViewport()
     public boolean isSmoothScrollingEnabled()
+    public void setSmoothScrollingEnabled(boolean)
     public final void smoothScrollBy(int,int,int)
     public final void smoothScrollTo(int,int)
     public final void smoothScrollTo(int,int,int)
@@ -3869,20 +4012,31 @@ androidx.core.widget.TintableCompoundButton:
 androidx.core.widget.TintableCompoundDrawablesView:
     public abstract android.content.res.ColorStateList getSupportCompoundDrawablesTintList()
     public abstract android.graphics.PorterDuff$Mode getSupportCompoundDrawablesTintMode()
+androidx.cursoradapter.widget.CursorAdapter$ChangeObserver:
+    final synthetic androidx.cursoradapter.widget.CursorAdapter this$0
+    void <init>(androidx.cursoradapter.widget.CursorAdapter)
+    public boolean deliverSelfNotifications()
+    public void onChange(boolean)
+androidx.cursoradapter.widget.CursorAdapter$MyDataSetObserver
 androidx.cursoradapter.widget.CursorAdapter:
     public static final int FLAG_AUTO_REQUERY
     public static final int FLAG_REGISTER_CONTENT_OBSERVER
+    protected boolean mAutoRequery
     protected android.widget.FilterQueryProvider mFilterQueryProvider
     public void <init>(android.content.Context,android.database.Cursor)
     public void <init>(android.content.Context,android.database.Cursor,int)
+    public void <init>(android.content.Context,android.database.Cursor,boolean)
     public android.widget.FilterQueryProvider getFilterQueryProvider()
     public boolean hasStableIds()
+    void init(android.content.Context,android.database.Cursor,int)
     protected void init(android.content.Context,android.database.Cursor,boolean)
+    protected void onContentChanged()
     public android.database.Cursor runQueryOnBackgroundThread(java.lang.CharSequence)
     public void setFilterQueryProvider(android.widget.FilterQueryProvider)
 androidx.cursoradapter.widget.ResourceCursorAdapter:
     public void <init>(android.content.Context,int,android.database.Cursor)
     public void <init>(android.content.Context,int,android.database.Cursor,int)
+    public void <init>(android.content.Context,int,android.database.Cursor,boolean)
     public void setDropDownViewResource(int)
     public void setViewResource(int)
 androidx.cursoradapter.widget.SimpleCursorAdapter$CursorToStringConverter
@@ -3941,17 +4095,29 @@ androidx.drawerlayout.widget.DrawerLayout:
     public static final int STATE_SETTLING
     private static final java.lang.String TAG
     private static final float TOUCH_SLOP_SENSITIVITY
+    private androidx.drawerlayout.widget.DrawerLayout$DrawerListener mListener
     public void <init>(android.content.Context)
+    public void addDrawerListener(androidx.drawerlayout.widget.DrawerLayout$DrawerListener)
     public void closeDrawer(int)
     public void closeDrawer(int,boolean)
+    public float getDrawerElevation()
+    public android.graphics.drawable.Drawable getStatusBarBackgroundDrawable()
     public boolean isDrawerOpen(int)
     public boolean isDrawerVisible(int)
     public void openDrawer(int)
     public void openDrawer(int,boolean)
+    public void removeDrawerListener(androidx.drawerlayout.widget.DrawerLayout$DrawerListener)
+    public void setDrawerElevation(float)
+    public void setDrawerListener(androidx.drawerlayout.widget.DrawerLayout$DrawerListener)
+    public void setDrawerLockMode(int)
     public void setDrawerLockMode(int,android.view.View)
     public void setDrawerShadow(int,int)
     public void setDrawerShadow(android.graphics.drawable.Drawable,int)
     public void setDrawerTitle(int,java.lang.CharSequence)
+    public void setScrimColor(int)
+    public void setStatusBarBackground(int)
+    public void setStatusBarBackground(android.graphics.drawable.Drawable)
+    public void setStatusBarBackgroundColor(int)
 androidx.fragment.app.BackStackRecord:
     static final java.lang.String TAG
     public java.lang.CharSequence getBreadCrumbShortTitle()
@@ -4764,6 +4930,19 @@ androidx.slidingpanelayout.widget.SlidingPaneLayout:
     public void <init>(android.content.Context)
     protected boolean canScroll(android.view.View,boolean,int,int,int)
     public boolean canSlide()
+    public int getCoveredFadeColor()
+    public int getParallaxDistance()
+    public int getSliderFadeColor()
+    public void setCoveredFadeColor(int)
+    public void setPanelSlideListener(androidx.slidingpanelayout.widget.SlidingPaneLayout$PanelSlideListener)
+    public void setParallaxDistance(int)
+    public void setShadowDrawable(android.graphics.drawable.Drawable)
+    public void setShadowDrawableLeft(android.graphics.drawable.Drawable)
+    public void setShadowDrawableRight(android.graphics.drawable.Drawable)
+    public void setShadowResource(int)
+    public void setShadowResourceLeft(int)
+    public void setShadowResourceRight(int)
+    public void setSliderFadeColor(int)
     public void smoothSlideClosed()
     public void smoothSlideOpen()
 androidx.swiperefreshlayout.widget.CircleImageView:
@@ -4822,7 +5001,9 @@ androidx.swiperefreshlayout.widget.CircularProgressDrawable:
     public void setArrowDimensions(float,float)
     public void setBackgroundColor(int)
     public void setCenterRadius(float)
+    public varargs void setColorSchemeColors(int[])
     public void setStrokeCap(android.graphics.Paint$Cap)
+androidx.swiperefreshlayout.widget.SwipeRefreshLayout$2
 androidx.swiperefreshlayout.widget.SwipeRefreshLayout:
     private static final int ALPHA_ANIMATION_DURATION
     private static final int ANIMATE_TO_START_DURATION
@@ -4841,10 +5022,27 @@ androidx.swiperefreshlayout.widget.SwipeRefreshLayout:
     private static final float MAX_PROGRESS_ANGLE
     private static final int SCALE_DOWN_DURATION
     private static final int STARTING_PROGRESS_ALPHA
+    private android.view.animation.Animation mScaleAnimation
     public void <init>(android.content.Context)
+    public int getProgressCircleDiameter()
+    public int getProgressViewEndOffset()
+    public int getProgressViewStartOffset()
     public boolean isRefreshing()
+    public varargs void setColorScheme(int[])
+    public varargs void setColorSchemeColors(int[])
+    public varargs void setColorSchemeResources(int[])
+    public void setDistanceToTriggerSync(int)
+    public void setOnChildScrollUpCallback(androidx.swiperefreshlayout.widget.SwipeRefreshLayout$OnChildScrollUpCallback)
+    public void setOnRefreshListener(androidx.swiperefreshlayout.widget.SwipeRefreshLayout$OnRefreshListener)
+    public void setProgressBackgroundColor(int)
+    public void setProgressBackgroundColorSchemeColor(int)
+    public void setProgressBackgroundColorSchemeResource(int)
     public void setProgressViewEndTarget(boolean,int)
     public void setProgressViewOffset(boolean,int,int)
+    public void setRefreshing(boolean)
+    public void setSize(int)
+    public void setSlingshotDistance(int)
+    private void startScaleUpAnimation(android.view.animation.Animation$AnimationListener)
 androidx.transition.AnimatorUtils:
     private void <init>()
 androidx.transition.ArcMotion:
@@ -5266,10 +5464,17 @@ androidx.viewpager.widget.PagerTabStrip:
     private static final int TAB_SPACING
     private static final java.lang.String TAG
     public void <init>(android.content.Context)
+    public boolean getDrawFullUnderline()
+    public int getTabIndicatorColor()
+    public void setDrawFullUnderline(boolean)
+    public void setTabIndicatorColor(int)
+    public void setTabIndicatorColorResource(int)
 androidx.viewpager.widget.PagerTitleStrip:
     private static final float SIDE_ALPHA
     private static final int TEXT_SPACING
     public void <init>(android.content.Context)
+    public void setGravity(int)
+    public void setTextColor(int)
 androidx.viewpager2.adapter.FragmentStateAdapter$1
 androidx.viewpager2.adapter.FragmentStateAdapter$2:
     void <init>(androidx.viewpager2.adapter.FragmentStateAdapter,androidx.viewpager2.adapter.FragmentViewHolder)
@@ -5354,6 +5559,9 @@ androidx.viewpager2.widget.FakeDrag:
     boolean endFakeDrag()
     boolean fakeDragBy(float)
 androidx.viewpager2.widget.MarginPageTransformer
+androidx.viewpager2.widget.PageTransformerAdapter:
+    androidx.viewpager2.widget.ViewPager2$PageTransformer getPageTransformer()
+    void setPageTransformer(androidx.viewpager2.widget.ViewPager2$PageTransformer)
 androidx.viewpager2.widget.ScrollEventAdapter:
     private static final int NO_POSITION
     private static final int STATE_IDLE
@@ -5364,8 +5572,16 @@ androidx.viewpager2.widget.ScrollEventAdapter:
     boolean isDragging()
     void notifyBeginFakeDrag()
     void notifyEndFakeDrag()
+androidx.viewpager2.widget.ViewPager2$AccessibilityProvider:
+    void onAttachAdapter(androidx.recyclerview.widget.RecyclerView$Adapter)
+    void onDetachAdapter(androidx.recyclerview.widget.RecyclerView$Adapter)
+    void onSetUserInputEnabled()
 androidx.viewpager2.widget.ViewPager2$OffscreenPageLimit
 androidx.viewpager2.widget.ViewPager2$Orientation
+androidx.viewpager2.widget.ViewPager2$PageAwareAccessibilityProvider:
+    public void onAttachAdapter(androidx.recyclerview.widget.RecyclerView$Adapter)
+    public void onDetachAdapter(androidx.recyclerview.widget.RecyclerView$Adapter)
+    public void onSetUserInputEnabled()
 androidx.viewpager2.widget.ViewPager2$ScrollState
 androidx.viewpager2.widget.ViewPager2:
     public static final int OFFSCREEN_PAGE_LIMIT_DEFAULT
@@ -5382,10 +5598,19 @@ androidx.viewpager2.widget.ViewPager2:
     public boolean endFakeDrag()
     public boolean fakeDragBy(float)
     public androidx.recyclerview.widget.RecyclerView$ItemDecoration getItemDecorationAt(int)
+    public int getItemDecorationCount()
     public void invalidateItemDecorations()
+    private void registerCurrentItemDataSetTracker(androidx.recyclerview.widget.RecyclerView$Adapter)
     public void removeItemDecoration(androidx.recyclerview.widget.RecyclerView$ItemDecoration)
     public void removeItemDecorationAt(int)
+    public void requestTransform()
+    public void setAdapter(androidx.recyclerview.widget.RecyclerView$Adapter)
+    public void setCurrentItem(int)
+    public void setOffscreenPageLimit(int)
+    public void setPageTransformer(androidx.viewpager2.widget.ViewPager2$PageTransformer)
+    public void setUserInputEnabled(boolean)
     void snapToPage()
+    private void unregisterCurrentItemDataSetTracker(androidx.recyclerview.widget.RecyclerView$Adapter)
 bolts.AggregateException
 bolts.AndroidExecutors:
     static final long KEEP_ALIVE_TIME
@@ -6647,8 +6872,6 @@ androidx.constraintlayout.solver.Metrics:
     public long slackvariables
     public long tableSizeIncrease
     public long widgets
-androidx.constraintlayout.widget.ConstraintLayout:
-    private androidx.constraintlayout.widget.ConstraintsChangedListener mConstraintsChangedListener
 androidx.constraintlayout.widget.StateSet:
     private androidx.constraintlayout.widget.ConstraintsChangedListener mConstraintsChangedListener
 androidx.lifecycle.LiveData:

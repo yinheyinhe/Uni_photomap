@@ -2,10 +2,12 @@ package com.HBuilder.UniPlugin;
 
 import android.Manifest;
 import android.app.Activity;
+import android.content.ContentValues;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.content.pm.PackageManager;
+import android.database.sqlite.SQLiteDatabase;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Matrix;
@@ -85,6 +87,8 @@ public class SelfCameraActivity extends Activity implements View.OnClickListener
     private String fileName;
 
     private MapView mapView;
+    private LocationDisplay locationDisplay;
+    private List<String> point;
     private Button button;
     private TextView sensorlocation;
 
@@ -183,7 +187,11 @@ public class SelfCameraActivity extends Activity implements View.OnClickListener
 
         switch (v.getId()){
             case R.id.cf_shot_btn://拍摄
-                takePicture();
+                try {
+                    takePicture();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
                 break;
             case R.id.cf_shoot_again_btn://重拍
                 takePictureAgain();
@@ -217,7 +225,7 @@ public class SelfCameraActivity extends Activity implements View.OnClickListener
     @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults){ }
 
-    private void takePicture(){
+    private void takePicture() throws IOException {
         SharedData.uploadResultShow=false;
         mCamera.takePicture(null,null,new Camera.PictureCallback(){
             @Override
@@ -233,6 +241,7 @@ public class SelfCameraActivity extends Activity implements View.OnClickListener
         faceSurface.setVisibility(View.GONE);
         takePhotoTips.setVisibility(View.GONE);
         location.setVisibility(View.GONE);
+        point = getLocation();
     }
 
     private void takePictureAgain(){
@@ -265,6 +274,13 @@ public class SelfCameraActivity extends Activity implements View.OnClickListener
                 //第一个是键名，第二个是键对应的值
                 intent.putExtra("camera_data","output_image.jpg");
                 setResult(RESULT_OK,intent);
+                DatabaseHelper dbHelper = new DatabaseHelper(SelfCameraActivity.this, "test_db",null,1);
+                SQLiteDatabase db = dbHelper.getWritableDatabase();
+//                ContentValues values = new ContentValues();
+                String insertSQL = "INSERT INTO user VALUES(?,?,?,?,?)";
+
+                db.execSQL(insertSQL,new Object[] { point.get(3),point.get(0),point.get(2),point.get(1),point.get(4) });
+                db.close();
             }catch (Exception e){
                 e.printStackTrace();
             }
@@ -320,6 +336,7 @@ public class SelfCameraActivity extends Activity implements View.OnClickListener
         point.add(String.valueOf(location.getLatitude())); //纬度
         point.add(String.valueOf(location.getLongitude())); //经度
         point.add(SharedData.filepath);  //图片存储路径
+        point.add(cView.getMsg());
         return point;
     }
 
@@ -353,7 +370,7 @@ public class SelfCameraActivity extends Activity implements View.OnClickListener
                 return false;
             }
         });
-        LocationDisplay locationDisplay = mapView.getLocationDisplay();
+        locationDisplay = mapView.getLocationDisplay();
         locationDisplay.setAutoPanMode(LocationDisplay.AutoPanMode.COMPASS_NAVIGATION);
         locationDisplay.startAsync();
 

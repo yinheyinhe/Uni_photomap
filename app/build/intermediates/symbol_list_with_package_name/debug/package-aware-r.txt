@@ -1676,6 +1676,7 @@ drawable arcgisruntime_mapview_magnifier
 drawable arcgisruntime_mapview_magnifier_mask
 drawable avd_hide_password
 drawable avd_show_password
+drawable background
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
 drawable btn_checkbox_unchecked_mtrl
@@ -1684,6 +1685,7 @@ drawable btn_radio_off_mtrl
 drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
+drawable button_drawable
 drawable dcloud_about_buttons_bg
 drawable dcloud_about_buttons_button_bg
 drawable dcloud_actionsheet_bottom_normal
